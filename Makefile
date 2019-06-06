@@ -8,12 +8,13 @@ help:
 	@ echo '  make bundle             # bundle install'
 	@ echo '  make carthage-boostrap  # carthage bootstrap'
 	@ echo '  make carthage-update    # carthage update'
+	@ echo '  make pod                # pod install'
 
 #
 # セットアップ
 #
 .PHONY: setup
-setup: bundle carthage-bootstrap
+setup: bundle pod carthage-bootstrap
 
 #
 # Bundler
@@ -32,3 +33,10 @@ carthage-bootstrap:
 .PHONY: carthage-update
 carthage-update:
 	mint run carthage/carthage carthage update --platform ios --cache-builds
+
+#
+# CocoaPods
+#
+.PHONY: pod
+pod:
+	./bin/fastlane ios cocoapods_install

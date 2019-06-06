@@ -1,0 +1,9 @@
+Carthage/Carthage@0.33.0         # https://github.com/Carthage/Carthage/releases
+nicklockwood/SwiftFormat@0.40.9  # https://github.com/nicklockwood/SwiftFormat/blob/master/CHANGELOG.md
+realm/SwiftLint@0.33.0           # https://github.com/realm/SwiftLint/blob/master/CHANGELOG.md
+ishkawa/DIKit@0.5.0              # https://github.com/ishkawa/DIKit/releases
+mono0926/LicensePlist@2.5.0      # https://github.com/mono0926/LicensePlist/releases
+
+#SwiftGen/SwiftGen@6.1.0           # https://github.com/SwiftGen/SwiftGen/blob/master/CHANGELOG.md
+# 下記Issueの通り、libxml2 をHomebrewで別途インストール必要なため、CocoaPodsで導入する
+# https://github.com/SwiftGen/SwiftGen/issues/580

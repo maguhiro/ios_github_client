@@ -9,6 +9,7 @@ help:
 	@ echo '  make carthage-boostrap  # carthage bootstrap'
 	@ echo '  make carthage-update    # carthage update'
 	@ echo '  make pod                # pod install'
+	@ echo '  make ack                # Acknowledgements生成'
 
 #
 # セットアップ
@@ -40,3 +41,10 @@ carthage-update:
 .PHONY: pod
 pod:
 	./bin/fastlane ios cocoapods_install
+
+#
+# Acknowledgements生成
+#
+.PHONY: ack
+ack:
+	./bin/fastlane ios generate_ack

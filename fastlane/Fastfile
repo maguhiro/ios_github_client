@@ -25,4 +25,11 @@ platform :ios do
      try_repo_update_on_error: true,
    )
   end
+
+  desc "Acknowledgementsの生成"
+  lane :generate_ack do
+    Dir.chdir(ENV["APP_ROOT"]) do
+      sh "mint run mono0926/LicensePlist license-plist --output-path GithubMain/GithubMain/Settings/Settings.bundle --prefix LicensePlist --github-token #{ENV['Github_API_ACCESS_TOKEN']} --suppress-opening-directory --force"
+    end
+  end
 end

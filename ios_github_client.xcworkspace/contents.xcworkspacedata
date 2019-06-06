@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:GithubMain/GithubMain.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:GithubCommon/GithubCommon.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:GithubMain/GithubMain.xcodeproj">
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

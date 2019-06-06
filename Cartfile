@@ -1,0 +1,16 @@
+# Network
+github "ashleymills/Reachability.swift"  ~> 4.3.1   # https://github.com/ashleymills/Reachability.swift/blob/master/CHANGELOG.md
+github "Alamofire/Alamofire"             ~> 4.8.1   # https://github.com/Alamofire/Alamofire/blob/master/CHANGELOG.md
+github "kean/Nuke"                       ~> 7.6.3   # https://github.com/kean/Nuke/blob/master/CHANGELOG.md
+
+# Reactive
+github "ReactiveX/RxSwift"               ~> 5.0.1   # https://github.com/ReactiveX/RxSwift/blob/master/CHANGELOG.md
+
+# Keychain
+github "kishikawakatsumi/KeychainAccess" ~> 3.2.0   # https://github.com/kishikawakatsumi/KeychainAccess/releases
+
+# AutoLayout
+github "SnapKit/SnapKit"                 ~> 5.0.0   # https://github.com/SnapKit/SnapKit/releases
+
+# Logger
+github "SwiftyBeaver/SwiftyBeaver"       ~> 1.7.0   # https://github.com/SwiftyBeaver/SwiftyBeaver/blob/master/CHANGELOG.md

@@ -1,0 +1,6 @@
+# Test
+github "Quick/Quick"      ~> 2.1.0  # https://github.com/Quick/Quick/releases
+github "Quick/Nimble"     ~> 8.0.1  # https://github.com/Quick/Nimble/releases
+
+# Mock
+github "SwiftKit/Cuckoo"  ~> 1.0.6 # https://github.com/Brightify/Cuckoo/blob/master/CHANGELOG.md

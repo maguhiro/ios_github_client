@@ -1,0 +1,28 @@
+#!ruby
+
+opt_out_usage
+
+skip_docs
+
+default_platform :ios
+
+platform :ios do
+  # ===== hook =====
+  before_all do |lane, options|
+  end
+
+  after_all do |lane, options|
+  end
+
+  error do |lane, exception, options|
+  end
+
+  # ===== public lane =====
+  desc "CocoaPodsで管理しているライブラリの最新化"
+  lane :cocoapods_install do
+   cocoapods(
+     use_bundle_exec: true,
+     try_repo_update_on_error: true,
+   )
+  end
+end

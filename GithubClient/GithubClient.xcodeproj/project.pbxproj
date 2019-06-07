@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,15 @@
 		4A5BBB2822A95A6300EA5D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2622A95A6300EA5D93 /* LaunchScreen.storyboard */; };
 		4A9E142C22A969B40067C4FB /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4A9E142B22A969B40067C4FB /* Settings.bundle */; };
 		7EC1773E0D15FC896CFEC749 /* Pods_GithubClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017749398AACFD17B7989BCE /* Pods_GithubClient.framework */; };
+		E352CE3022AA97E8001F4503 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E352CE2722AA97E8001F4503 /* RxRelay.framework */; };
+		E352CE3122AA97E8001F4503 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E352CE2822AA97E8001F4503 /* RxSwift.framework */; };
+		E352CE3222AA97E8001F4503 /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E352CE2922AA97E8001F4503 /* Reachability.framework */; };
+		E352CE3322AA97E8001F4503 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E352CE2A22AA97E8001F4503 /* SwiftyBeaver.framework */; };
+		E352CE3422AA97E8001F4503 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E352CE2B22AA97E8001F4503 /* KeychainAccess.framework */; };
+		E352CE3522AA97E8001F4503 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E352CE2C22AA97E8001F4503 /* SnapKit.framework */; };
+		E352CE3622AA97E8001F4503 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E352CE2D22AA97E8001F4503 /* Alamofire.framework */; };
+		E352CE3722AA97E8001F4503 /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E352CE2E22AA97E8001F4503 /* Nuke.framework */; };
+		E352CE3822AA97E8001F4503 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E352CE2F22AA97E8001F4503 /* RxCocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +39,17 @@
 		5BB607080B11BC6F0865FE83 /* Pods-GithubClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubClient.release.xcconfig"; path = "Target Support Files/Pods-GithubClient/Pods-GithubClient.release.xcconfig"; sourceTree = "<group>"; };
 		8A304F04F70B04F9D2554848 /* Pods-GithubMain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubMain.release.xcconfig"; path = "Target Support Files/Pods-GithubMain/Pods-GithubMain.release.xcconfig"; sourceTree = "<group>"; };
 		C456BACF88813370316EFEAF /* Pods-GithubClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubClient.debug.xcconfig"; path = "Target Support Files/Pods-GithubClient/Pods-GithubClient.debug.xcconfig"; sourceTree = "<group>"; };
+		E352CE2022AA9602001F4503 /* CarthageInput.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = CarthageInput.xcfilelist; sourceTree = "<group>"; };
+		E352CE2122AA960D001F4503 /* CarthageOutput.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = CarthageOutput.xcfilelist; sourceTree = "<group>"; };
+		E352CE2722AA97E8001F4503 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = ../Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
+		E352CE2822AA97E8001F4503 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = ../Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		E352CE2922AA97E8001F4503 /* Reachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reachability.framework; path = ../Carthage/Build/iOS/Reachability.framework; sourceTree = "<group>"; };
+		E352CE2A22AA97E8001F4503 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = ../Carthage/Build/iOS/SwiftyBeaver.framework; sourceTree = "<group>"; };
+		E352CE2B22AA97E8001F4503 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = ../Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
+		E352CE2C22AA97E8001F4503 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = ../Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		E352CE2D22AA97E8001F4503 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		E352CE2E22AA97E8001F4503 /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = ../Carthage/Build/iOS/Nuke.framework; sourceTree = "<group>"; };
+		E352CE2F22AA97E8001F4503 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = ../Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +57,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E352CE3022AA97E8001F4503 /* RxRelay.framework in Frameworks */,
+				E352CE3122AA97E8001F4503 /* RxSwift.framework in Frameworks */,
+				E352CE3222AA97E8001F4503 /* Reachability.framework in Frameworks */,
+				E352CE3322AA97E8001F4503 /* SwiftyBeaver.framework in Frameworks */,
+				E352CE3422AA97E8001F4503 /* KeychainAccess.framework in Frameworks */,
+				E352CE3522AA97E8001F4503 /* SnapKit.framework in Frameworks */,
+				E352CE3622AA97E8001F4503 /* Alamofire.framework in Frameworks */,
+				E352CE3722AA97E8001F4503 /* Nuke.framework in Frameworks */,
+				E352CE3822AA97E8001F4503 /* RxCocoa.framework in Frameworks */,
 				7EC1773E0D15FC896CFEC749 /* Pods_GithubClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,6 +76,15 @@
 		08A58E1505FDDB2721EF1A49 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E352CE2D22AA97E8001F4503 /* Alamofire.framework */,
+				E352CE2B22AA97E8001F4503 /* KeychainAccess.framework */,
+				E352CE2E22AA97E8001F4503 /* Nuke.framework */,
+				E352CE2922AA97E8001F4503 /* Reachability.framework */,
+				E352CE2F22AA97E8001F4503 /* RxCocoa.framework */,
+				E352CE2722AA97E8001F4503 /* RxRelay.framework */,
+				E352CE2822AA97E8001F4503 /* RxSwift.framework */,
+				E352CE2C22AA97E8001F4503 /* SnapKit.framework */,
+				E352CE2A22AA97E8001F4503 /* SwiftyBeaver.framework */,
 				017749398AACFD17B7989BCE /* Pods_GithubClient.framework */,
 			);
 			name = Frameworks;
@@ -96,6 +134,8 @@
 		4A9E142A22A9699E0067C4FB /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				E352CE2022AA9602001F4503 /* CarthageInput.xcfilelist */,
+				E352CE2122AA960D001F4503 /* CarthageOutput.xcfilelist */,
 				4A9E142B22A969B40067C4FB /* Settings.bundle */,
 			);
 			path = Settings;
@@ -131,6 +171,7 @@
 				4A5BBB1622A95A6200EA5D93 /* Sources */,
 				4A5BBB1722A95A6200EA5D93 /* Frameworks */,
 				4A5BBB1822A95A6200EA5D93 /* Resources */,
+				E352CE1F22AA9549001F4503 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -210,6 +251,26 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		E352CE1F22AA9549001F4503 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/GithubClient/Settings/CarthageInput.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = Carthage;
+			outputFileListPaths = (
+				"$(SRCROOT)/GithubClient/Settings/CarthageOutput.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mint run carthage/carthage carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -368,6 +429,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FR4436C6A3;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = GithubClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -387,6 +449,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FR4436C6A3;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = GithubClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

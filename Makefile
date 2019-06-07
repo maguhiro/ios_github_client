@@ -11,6 +11,8 @@ help:
 	@ echo '  make carthage-update     # carthage update'
 	@ echo '  make pod                 # pod install'
 	@ echo '  make ack                 # Acknowledgements生成'
+	@ echo '  make lint                # lintチェック'
+	@ echo '  make code-format         # コードフォーマット'
 
 #
 # セットアップ
@@ -56,3 +58,17 @@ pod:
 .PHONY: ack
 ack:
 	./bin/fastlane ios generate_ack
+
+#
+# SwiftLint
+#
+.PHONY: lint
+lint:
+	mint run realm/SwiftLint swiftlint lint
+
+#
+# SwiftFormat
+#
+.PHONY: code-format
+code-format:
+	mint run nicklockwood/SwiftFormat swiftformat . --cache ./cache/swiftformat/cache.swiftformat

@@ -4,23 +4,15 @@ use_frameworks!
 
 workspace 'ios_github_client'
 
-project 'GithubMain/GithubMain.xcodeproj'
-project 'GithubCommon/GithubCommon.xcodeproj'
+project 'GithubClient/GithubClient.xcodeproj'
 
 def tool_pods
   pod 'SwiftGen',  '~> 6.0.1' # https://github.com/SwiftGen/SwiftGen/blob/master/CHANGELOG.md
 end
 
-target 'GithubMain' do
-  project 'GithubMain/GithubMain.xcodeproj'
+target 'GithubClient' do
+  project 'GithubClient/GithubClient.xcodeproj'
   tool_pods
-end
-
-target 'GithubCommon' do
-  project 'GithubCommon/GithubCommon.xcodeproj'
-end
-target 'GithubCommonTests' do
-  project 'GithubCommon/GithubCommon.xcodeproj'
 end
 
 post_install do |installer|

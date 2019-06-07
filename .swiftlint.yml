@@ -1,0 +1,138 @@
+excluded:
+  - bin
+  - cache
+  - Carthage
+  - fastlane
+  - Pods
+  - vendor
+
+disabled_rules:
+  - superfluous_disable_command # 状況によってはdisableとしたい時もある。理由を明記すればOK
+  - todo # fixme のみを対象とすることができたら解放したい
+  - xctfail_message # XCTest使わない
+
+opt_in_rules:
+  - anyobject_protocol
+  - array_init
+  - attributes
+  - closure_body_length
+  - closure_end_indentation
+  - closure_spacing
+  - collection_alignment
+  #- conditional_returns_on_newline if, guard共にシンプルであれば1行で
+  - contains_over_first_not_nil
+  - convenience_type
+  - discouraged_object_literal
+  - discouraged_optional_boolean
+  - discouraged_optional_collection
+  - empty_count
+  - empty_string
+  #- empty_xctest_method XCTest使わない
+  #- explicit_acl internalも全て明記するのを避けたい
+  - explicit_enum_raw_value
+  - explicit_init
+  #- explicit_self 毎度全てselfは書かない
+  #- explicit_top_level_acl internalも全て明記するのを避けたい
+  - explicit_type_interface
+  - extension_access_modifier
+  - fallthrough
+  - fatal_error_message
+  #- file_header ヘッダー情報不要
+  - file_name
+  - file_types_order
+  - first_where
+  - force_unwrapping
+  #- function_default_parameter_at_end 最後の方が必ず設定されているとは限らない
+  - identical_operands
+  - implicit_return
+  - implicitly_unwrapped_optional
+  - joined_default_parameter
+  - last_where
+  - legacy_multiple
+  - legacy_random
+  - let_var_whitespace
+  #- literal_expression_end_indentation SwiftFormatと相性が悪い
+  - lower_acl_than_parent
+  #- missing_docs 全てドキュメンテーションコメント書くのは…
+  - modifier_order
+  - multiline_arguments
+  - multiline_arguments_brackets
+  - multiline_function_chains
+  - multiline_literal_brackets
+  - multiline_parameters
+  - multiline_parameters_brackets
+  - nimble_operator
+  #- no_extension_access_modifier 使うこと多い
+  #- no_grouping_extension 使うこと多い
+  - nslocalizedstring_key
+  - nslocalizedstring_require_bundle
+  #- number_separator 使わない
+  #- object_literal 使わない
+  - operator_usage_whitespace
+  - overridden_super_call
+  - override_in_extension
+  #- pattern_matching_keywords 使うときもある
+  #- prefixed_toplevel_constant 使わない
+  - private_action
+  - private_outlet
+  #- prohibited_interface_builder まだIBは利用する
+  - prohibited_super_call
+  - quick_discouraged_call
+  - quick_discouraged_focused_test
+  - quick_discouraged_pending_test
+  - reduce_into
+  - redundant_nil_coalescing
+  - redundant_type_annotation
+  #- required_deinit 全てに書くのしんどい
+  - required_enum_case
+  - single_test_class
+  - sorted_first_last
+  - sorted_imports
+  - static_operator
+  - strict_fileprivate
+  - strong_iboutlet
+  - switch_case_on_newline
+  - toggle_bool
+  #- trailing_closure RxSwiftのsubscribeで誤検知
+  #- type_contents_order 見やすければこれは不要
+  - unavailable_function
+  - unneeded_parentheses_in_closure_argument
+  #- unowned_variable_capture 理解して適宜利用できればOK
+  - untyped_error_in_catch
+  - unused_import
+  - unused_private_declaration
+  - vertical_parameter_alignment_on_call
+  #- vertical_whitespace_between_cases この空行は不要
+  - vertical_whitespace_closing_braces
+  - vertical_whitespace_opening_braces
+  #- xct_specific_matcher XCTest使わない
+  #- xctfail_message XCTest使わない
+  #- yoda_condition 大なり小なりの場合は、右側に大きな値を持ってきた方がみやすい
+
+cyclomatic_complexity:
+  ignores_case_statements: true
+
+explicit_init:
+  severity: error
+
+force_unwrapping:
+  severity: error
+
+legacy_cggeometry_functions:
+  severity: error
+
+legacy_constant:
+  severity: error
+
+legacy_constructor:
+  severity: error
+
+modifier_order:
+  # SwiftFormatの順序に合わせる
+  preferred_modifier_order: [acl, setterACL, final, override, dynamic, mutators, lazy, required, convenience, typeMethods, owned]
+
+private_outlet:
+  allow_private_set: true
+
+unused_optional_binding:
+  ignore_optional_try: true

@@ -38,10 +38,6 @@ public extension Logger {
   func e(_ message: String, context: Any? = nil, functionName: String = #function, fileName: String = #file, lineNumber: Int = #line) {
     print(.error, message: message, context: context, functionName: functionName, fileName: fileName, lineNumber: lineNumber)
   }
-
-  func f(_ message: String, context: Any? = nil, functionName: String = #function, fileName: String = #file, lineNumber: Int = #line) {
-    print(.error, message: message, context: context, functionName: functionName, fileName: fileName, lineNumber: lineNumber)
-  }
 }
 
 // swiftlint:disable function_parameter_count

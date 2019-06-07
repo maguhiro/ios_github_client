@@ -4,13 +4,13 @@
 .PHONY: help
 help:
 	@ echo '■使い方'
-	@ echo '  make setup              # セットアップ'
-	@ echo '  make bundle             # bundle install'
-	@ echo '  make mint               # mint bootstrap'
-	@ echo '  make carthage-boostrap  # carthage bootstrap'
-	@ echo '  make carthage-update    # carthage update'
-	@ echo '  make pod                # pod install'
-	@ echo '  make ack                # Acknowledgements生成'
+	@ echo '  make setup               # セットアップ'
+	@ echo '  make bundle              # bundle install'
+	@ echo '  make mint                # mint bootstrap'
+	@ echo '  make carthage-bootstrap  # carthage bootstrap'
+	@ echo '  make carthage-update     # carthage update'
+	@ echo '  make pod                 # pod install'
+	@ echo '  make ack                 # Acknowledgements生成'
 
 #
 # セットアップ

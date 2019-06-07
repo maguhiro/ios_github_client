@@ -6,6 +6,7 @@ help:
 	@ echo '■使い方'
 	@ echo '  make setup              # セットアップ'
 	@ echo '  make bundle             # bundle install'
+	@ echo '  make mint               # mint bootstrap'
 	@ echo '  make carthage-boostrap  # carthage bootstrap'
 	@ echo '  make carthage-update    # carthage update'
 	@ echo '  make pod                # pod install'
@@ -15,7 +16,7 @@ help:
 # セットアップ
 #
 .PHONY: setup
-setup: bundle pod carthage-bootstrap
+setup: bundle mint pod carthage-bootstrap
 
 #
 # Bundler
@@ -23,6 +24,13 @@ setup: bundle pod carthage-bootstrap
 .PHONY: bundle
 bundle:
 	bundle install
+
+#
+# Mint
+#
+.PHONY: mint
+mint:
+	mint bootstrap
 
 #
 # Carthage

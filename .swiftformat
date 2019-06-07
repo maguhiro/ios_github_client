@@ -1,5 +1,5 @@
 # file options
---exclude bin, Carthage, fastlane, Pods, vendor
+--exclude bin, cache, Carthage, fastlane, Pods, vendor
 
 # rules options
 --disable redundantRawValues,yodaConditions

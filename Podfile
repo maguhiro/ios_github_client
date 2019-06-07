@@ -4,14 +4,11 @@ use_frameworks!
 
 workspace 'ios_github_client'
 
-project 'GithubClient/GithubClient.xcodeproj'
-
 def tool_pods
   pod 'SwiftGen',  '~> 6.0.1' # https://github.com/SwiftGen/SwiftGen/blob/master/CHANGELOG.md
 end
 
 target 'GithubClient' do
-  project 'GithubClient/GithubClient.xcodeproj'
   tool_pods
 end
 

@@ -17,6 +17,7 @@ public final class Logger {
 }
 
 // MARK: ログ出力メソッド
+
 public extension Logger {
   func v(_ message: String, context: Any? = nil, functionName: String = #function, fileName: String = #file, lineNumber: Int = #line) {
     print(.verbose, message: message, context: context, functionName: functionName, fileName: fileName, lineNumber: lineNumber)
@@ -43,6 +44,8 @@ public extension Logger {
   }
 }
 
+// swiftlint:disable function_parameter_count
+// SwiftyBeaverに渡す引数に対応するため
 private extension Logger {
   func print(_ logLevel: SwiftyBeaver.Level,
              message: String,
@@ -53,3 +56,5 @@ private extension Logger {
     SwiftyBeaver.custom(level: logLevel, message: message, file: fileName, function: functionName, line: lineNumber, context: context)
   }
 }
+
+// swiftlint:enable function_parameter_count

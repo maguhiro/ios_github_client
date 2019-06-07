@@ -27,6 +27,8 @@
 		E352CE4322AA9AC0001F4503 /* GithubUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = E352CE4122AA9AC0001F4503 /* GithubUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E352CE4622AA9AC0001F4503 /* GithubUtility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E352CE3F22AA9AC0001F4503 /* GithubUtility.framework */; };
 		E352CE4722AA9AC0001F4503 /* GithubUtility.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E352CE3F22AA9AC0001F4503 /* GithubUtility.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E352CE4D22AA9B16001F4503 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E352CE4C22AA9B16001F4503 /* SwiftyBeaver.framework */; };
+		E352CE5122AA9B38001F4503 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E352CE5022AA9B38001F4503 /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,8 @@
 		E352CE3F22AA9AC0001F4503 /* GithubUtility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GithubUtility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E352CE4122AA9AC0001F4503 /* GithubUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GithubUtility.h; sourceTree = "<group>"; };
 		E352CE4222AA9AC0001F4503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E352CE4C22AA9B16001F4503 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/iOS/SwiftyBeaver.framework; sourceTree = "<group>"; };
+		E352CE5022AA9B38001F4503 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E352CE4D22AA9B16001F4503 /* SwiftyBeaver.framework in Frameworks */,
 				012A394187AB6A563BCA6323 /* Pods_GithubUtility.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,6 +124,7 @@
 		08A58E1505FDDB2721EF1A49 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E352CE4C22AA9B16001F4503 /* SwiftyBeaver.framework */,
 				E352CE2D22AA97E8001F4503 /* Alamofire.framework */,
 				E352CE2B22AA97E8001F4503 /* KeychainAccess.framework */,
 				E352CE2E22AA97E8001F4503 /* Nuke.framework */,
@@ -211,10 +217,27 @@
 		E352CE4022AA9AC0001F4503 /* GithubUtility */ = {
 			isa = PBXGroup;
 			children = (
+				E352CE4E22AA9B27001F4503 /* Classes */,
 				E352CE4122AA9AC0001F4503 /* GithubUtility.h */,
 				E352CE4222AA9AC0001F4503 /* Info.plist */,
 			);
 			path = GithubUtility;
+			sourceTree = "<group>";
+		};
+		E352CE4E22AA9B27001F4503 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E352CE4F22AA9B2F001F4503 /* Logger */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E352CE4F22AA9B2F001F4503 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				E352CE5022AA9B38001F4503 /* Logger.swift */,
+			);
+			path = Logger;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +309,7 @@
 					};
 					E352CE3E22AA9AC0001F4503 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -410,6 +434,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E352CE5122AA9B38001F4503 /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,6 +588,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C456BACF88813370316EFEAF /* Pods-GithubClient.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FR4436C6A3;
@@ -583,6 +609,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5BB607080B11BC6F0865FE83 /* Pods-GithubClient.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FR4436C6A3;
@@ -603,6 +630,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B44B32E502A251A0484AEAC /* Pods-GithubUtility.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -611,6 +639,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GithubUtility/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -621,6 +653,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tabelog.GithubUtility;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -632,6 +665,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4754EE898A17AD12FAB23991 /* Pods-GithubUtility.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -640,6 +674,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GithubUtility/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -29,6 +29,7 @@
 		E352CE4722AA9AC0001F4503 /* GithubUtility.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E352CE3F22AA9AC0001F4503 /* GithubUtility.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E352CE4D22AA9B16001F4503 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E352CE4C22AA9B16001F4503 /* SwiftyBeaver.framework */; };
 		E352CE5122AA9B38001F4503 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E352CE5022AA9B38001F4503 /* Logger.swift */; };
+		E352CE5422AAA051001F4503 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E352CE5322AAA051001F4503 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		E352CE4222AA9AC0001F4503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E352CE4C22AA9B16001F4503 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/iOS/SwiftyBeaver.framework; sourceTree = "<group>"; };
 		E352CE5022AA9B38001F4503 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		E352CE5322AAA051001F4503 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 		E352CDFC22AA8D77001F4503 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E352CE5222AA9CF3001F4503 /* Const */,
 				E352CDFD22AA8D87001F4503 /* AppDelegate */,
 				4A5BBB2122A95A6200EA5D93 /* Main.storyboard */,
 				4A5BBB1F22A95A6200EA5D93 /* ViewController.swift */,
@@ -238,6 +241,14 @@
 				E352CE5022AA9B38001F4503 /* Logger.swift */,
 			);
 			path = Logger;
+			sourceTree = "<group>";
+		};
+		E352CE5222AA9CF3001F4503 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				E352CE5322AAA051001F4503 /* Constants.swift */,
+			);
+			path = Const;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -427,6 +438,7 @@
 			files = (
 				4A5BBB2022A95A6200EA5D93 /* ViewController.swift in Sources */,
 				4A5BBB1E22A95A6200EA5D93 /* AppDelegate.swift in Sources */,
+				E352CE5422AAA051001F4503 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

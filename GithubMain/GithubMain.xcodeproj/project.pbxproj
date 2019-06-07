@@ -81,12 +81,9 @@
 		4A5BBB1C22A95A6200EA5D93 /* GithubMain */ = {
 			isa = PBXGroup;
 			children = (
-				4A9E142A22A9699E0067C4FB /* Settings */,
-				4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */,
-				4A5BBB1F22A95A6200EA5D93 /* ViewController.swift */,
-				4A5BBB2122A95A6200EA5D93 /* Main.storyboard */,
 				4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */,
-				4A5BBB2622A95A6300EA5D93 /* LaunchScreen.storyboard */,
+				E352CDFC22AA8D77001F4503 /* Classes */,
+				4A9E142A22A9699E0067C4FB /* Settings */,
 				4A5BBB2922A95A6300EA5D93 /* Info.plist */,
 			);
 			path = GithubMain;
@@ -98,6 +95,25 @@
 				4A9E142B22A969B40067C4FB /* Settings.bundle */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		E352CDFC22AA8D77001F4503 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E352CDFD22AA8D87001F4503 /* AppDelegate */,
+				4A5BBB2122A95A6200EA5D93 /* Main.storyboard */,
+				4A5BBB1F22A95A6200EA5D93 /* ViewController.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E352CDFD22AA8D87001F4503 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */,
+				4A5BBB2622A95A6300EA5D93 /* LaunchScreen.storyboard */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

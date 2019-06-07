@@ -75,3 +75,7 @@ fastlane/test_output
 
 bin/
 vendor/
+
+# cache
+/cache/swiftformat/*
+!/cache/swiftformat/.gitkeep

@@ -59,6 +59,7 @@
 		4A9E14F222AB62BD0067C4FB /* GithubPresentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9E147622AB5E010067C4FB /* GithubPresentation.framework */; };
 		4A9E14F322AB62BD0067C4FB /* GithubUtility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E352CE3F22AA9AC0001F4503 /* GithubUtility.framework */; };
 		4A9E14F622AB635E0067C4FB /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9E14F522AB635E0067C4FB /* NetworkReachability.swift */; };
+		4A9E14F822AB671D0067C4FB /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9E14F722AB671D0067C4FB /* GithubAPI.swift */; };
 		6386BE665050358803D26345 /* Pods_GithubPresentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B279633EC6D673334526B7 /* Pods_GithubPresentation.framework */; };
 		6E16B724E36B7799D60B15B8 /* Pods_GithubUtility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30A7E17149837EEFA3000D9 /* Pods_GithubUtility.framework */; };
 		6E1B318E1EDFD0A0E56A0F24 /* Pods_GithubInfra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B999572E9B11A81543BF32 /* Pods_GithubInfra.framework */; };
@@ -263,6 +264,7 @@
 		4A9E14E422AB61AB0067C4FB /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = Carthage/Build/iOS/Nuke.framework; sourceTree = "<group>"; };
 		4A9E14E522AB61AB0067C4FB /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		4A9E14F522AB635E0067C4FB /* NetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
+		4A9E14F722AB671D0067C4FB /* GithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
 		4FC04174DEE822C2EF9D5217 /* Pods-GithubInfraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubInfraTests.debug.xcconfig"; path = "../ios_github_client/Pods/Target Support Files/Pods-GithubInfraTests/Pods-GithubInfraTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5B44B32E502A251A0484AEAC /* Pods-GithubUtility.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubUtility.debug.xcconfig"; path = "../ios_github_client/Pods/Target Support Files/Pods-GithubUtility/Pods-GithubUtility.debug.xcconfig"; sourceTree = "<group>"; };
 		5BB607080B11BC6F0865FE83 /* Pods-GithubClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubClient.release.xcconfig"; path = "../ios_github_client/Pods/Target Support Files/Pods-GithubClient/Pods-GithubClient.release.xcconfig"; sourceTree = "<group>"; };
@@ -622,6 +624,7 @@
 		4A9E149922AB5E1D0067C4FB /* GithubView */ = {
 			isa = PBXGroup;
 			children = (
+				4A9E14FC22AB6C1E0067C4FB /* Classes */,
 				4A9E149A22AB5E1D0067C4FB /* GithubView.h */,
 				4A9E149B22AB5E1D0067C4FB /* Info.plist */,
 			);
@@ -650,9 +653,41 @@
 		4A9E14F422AB632C0067C4FB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4A9E14F922AB674A0067C4FB /* GithubAPI */,
 				4A9E14F522AB635E0067C4FB /* NetworkReachability.swift */,
+				4A9E14F722AB671D0067C4FB /* GithubAPI.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		4A9E14F922AB674A0067C4FB /* GithubAPI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GithubAPI;
+			sourceTree = "<group>";
+		};
+		4A9E14FC22AB6C1E0067C4FB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4A9E14FF22AB6C410067C4FB /* ExternalAuth */,
+				4A9E14FD22AB6C290067C4FB /* App */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4A9E14FD22AB6C290067C4FB /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4A9E14FF22AB6C410067C4FB /* ExternalAuth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ExternalAuth;
 			sourceTree = "<group>";
 		};
 		E352CDFC22AA8D77001F4503 /* Classes */ = {
@@ -1479,6 +1514,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A9E14F622AB635E0067C4FB /* NetworkReachability.swift in Sources */,
+				4A9E14F822AB671D0067C4FB /* GithubAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

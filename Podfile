@@ -15,6 +15,33 @@ end
 target 'GithubUtility' do
 end
 
+target 'GithubEntity' do
+end
+
+target 'GithubEntityTests' do
+end
+
+target 'GithubUsecase' do
+end
+
+target 'GithubUsecaseTests' do
+end
+
+target 'GithubInfra' do
+end
+
+target 'GithubInfraTests' do
+end
+
+target 'GithubPresentation' do
+end
+
+target 'GithubPresentationTests' do
+end
+
+target 'GithubView' do
+end
+
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |configuration|

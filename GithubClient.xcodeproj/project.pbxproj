@@ -47,6 +47,17 @@
 		4A9E14E622AB61AB0067C4FB /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9E14E322AB61AB0067C4FB /* RxCocoa.framework */; };
 		4A9E14E722AB61AB0067C4FB /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9E14E422AB61AB0067C4FB /* Nuke.framework */; };
 		4A9E14E822AB61AB0067C4FB /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9E14E522AB61AB0067C4FB /* SnapKit.framework */; };
+		4A9E14E922AB62820067C4FB /* GithubUtility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E352CE3F22AA9AC0001F4503 /* GithubUtility.framework */; };
+		4A9E14EA22AB62940067C4FB /* GithubEntity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9E143222AB5C1E0067C4FB /* GithubEntity.framework */; };
+		4A9E14EB22AB62940067C4FB /* GithubUtility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E352CE3F22AA9AC0001F4503 /* GithubUtility.framework */; };
+		4A9E14EC22AB62A40067C4FB /* GithubEntity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9E143222AB5C1E0067C4FB /* GithubEntity.framework */; };
+		4A9E14ED22AB62A40067C4FB /* GithubUsecase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9E145422AB5DDD0067C4FB /* GithubUsecase.framework */; };
+		4A9E14EE22AB62A40067C4FB /* GithubUtility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E352CE3F22AA9AC0001F4503 /* GithubUtility.framework */; };
+		4A9E14EF22AB62B10067C4FB /* GithubEntity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9E143222AB5C1E0067C4FB /* GithubEntity.framework */; };
+		4A9E14F022AB62B10067C4FB /* GithubUsecase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9E145422AB5DDD0067C4FB /* GithubUsecase.framework */; };
+		4A9E14F122AB62B10067C4FB /* GithubUtility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E352CE3F22AA9AC0001F4503 /* GithubUtility.framework */; };
+		4A9E14F222AB62BD0067C4FB /* GithubPresentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9E147622AB5E010067C4FB /* GithubPresentation.framework */; };
+		4A9E14F322AB62BD0067C4FB /* GithubUtility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E352CE3F22AA9AC0001F4503 /* GithubUtility.framework */; };
 		6386BE665050358803D26345 /* Pods_GithubPresentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B279633EC6D673334526B7 /* Pods_GithubPresentation.framework */; };
 		6E16B724E36B7799D60B15B8 /* Pods_GithubUtility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30A7E17149837EEFA3000D9 /* Pods_GithubUtility.framework */; };
 		6E1B318E1EDFD0A0E56A0F24 /* Pods_GithubInfra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B999572E9B11A81543BF32 /* Pods_GithubInfra.framework */; };
@@ -320,6 +331,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A9E14E922AB62820067C4FB /* GithubUtility.framework in Frameworks */,
 				74E4850C5636EF3BE7EDCF6E /* Pods_GithubEntity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +349,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A9E14EA22AB62940067C4FB /* GithubEntity.framework in Frameworks */,
+				4A9E14EB22AB62940067C4FB /* GithubUtility.framework in Frameworks */,
 				4A9E14E122AB61670067C4FB /* RxRelay.framework in Frameworks */,
 				4A9E14DF22AB61660067C4FB /* RxSwift.framework in Frameworks */,
 				D33A2DFAA2DF4E707D0731F8 /* Pods_GithubUsecase.framework in Frameworks */,
@@ -356,6 +370,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A9E14EF22AB62B10067C4FB /* GithubEntity.framework in Frameworks */,
+				4A9E14F022AB62B10067C4FB /* GithubUsecase.framework in Frameworks */,
+				4A9E14F122AB62B10067C4FB /* GithubUtility.framework in Frameworks */,
 				6386BE665050358803D26345 /* Pods_GithubPresentation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,6 +390,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A9E14F222AB62BD0067C4FB /* GithubPresentation.framework in Frameworks */,
+				4A9E14F322AB62BD0067C4FB /* GithubUtility.framework in Frameworks */,
 				4A9E14E622AB61AB0067C4FB /* RxCocoa.framework in Frameworks */,
 				4A9E14E722AB61AB0067C4FB /* Nuke.framework in Frameworks */,
 				4A9E14E822AB61AB0067C4FB /* SnapKit.framework in Frameworks */,
@@ -384,6 +403,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A9E14EC22AB62A40067C4FB /* GithubEntity.framework in Frameworks */,
+				4A9E14ED22AB62A40067C4FB /* GithubUsecase.framework in Frameworks */,
+				4A9E14EE22AB62A40067C4FB /* GithubUtility.framework in Frameworks */,
 				4A9E14DB22AB60770067C4FB /* Reachability.framework in Frameworks */,
 				4A9E14E222AB61780067C4FB /* RxRelay.framework in Frameworks */,
 				4A9E14DC22AB60770067C4FB /* RxSwift.framework in Frameworks */,

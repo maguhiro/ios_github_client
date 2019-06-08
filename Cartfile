@@ -12,5 +12,8 @@ github "kishikawakatsumi/KeychainAccess" ~> 3.2.0   # https://github.com/kishika
 # AutoLayout
 github "SnapKit/SnapKit"                 ~> 5.0.0   # https://github.com/SnapKit/SnapKit/releases
 
+# Authorization
+github "OAuthSwift/OAuthSwift"           ~> 1.4.0   # https://github.com/OAuthSwift/OAuthSwift/releases
+
 # Logger
 github "SwiftyBeaver/SwiftyBeaver"       ~> 1.7.0   # https://github.com/SwiftyBeaver/SwiftyBeaver/blob/master/CHANGELOG.md

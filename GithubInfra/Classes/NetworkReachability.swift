@@ -1,9 +1,20 @@
-//
-//  NetworkReachability.swift
-//  GithubInfra
-//
-//  Created by maguhiro on 2019/06/08.
-//  Copyright © 2019 maguhiro. All rights reserved.
-//
+import Reachability
 
-import Foundation
+final class NetworkReachability {
+  private static let shared = NetworkReachability()
+
+  private let reachability = Reachability()
+
+  var isConnected: Bool {
+    guard let reachability = reachability else {
+      return false
+    }
+
+    switch reachability.connection {
+    case .cellular, .wifi:
+      return true
+    case .none:
+      return false
+    }
+  }
+}

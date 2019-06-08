@@ -1,7 +1,7 @@
 import Reachability
 
 final class NetworkReachability {
-  private static let shared = NetworkReachability()
+  static let shared = NetworkReachability()
 
   private let reachability = Reachability()
 

@@ -32,7 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 private extension AppDelegate {
   func setRootViewController() {
-    let topVC = TopViewController()
-    window?.rootViewController = topVC
+    window = UIWindow(frame: UIScreen.main.bounds)
+    window?.rootViewController = TopViewController()
+    window?.makeKeyAndVisible()
   }
 }

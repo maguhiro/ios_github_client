@@ -15,6 +15,7 @@
 		4A0558AC22AD4AD2003F2A24 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0558AA22AD4AD2003F2A24 /* LoginViewController.swift */; };
 		4A0558AD22AD4AD2003F2A24 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0558AB22AD4AD2003F2A24 /* LoginViewController.xib */; };
 		4A0558B022AD54D4003F2A24 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0558AF22AD54D4003F2A24 /* Constants.swift */; };
+		4A0558B222AD55BC003F2A24 /* LoggingSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0558B122AD55BC003F2A24 /* LoggingSetting.swift */; };
 		4A5BBB1E22A95A6200EA5D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */; };
 		4A5BBB2522A95A6300EA5D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */; };
 		4A5BBB2822A95A6300EA5D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2622A95A6300EA5D93 /* LaunchScreen.storyboard */; };
@@ -235,6 +236,7 @@
 		4A0558AA22AD4AD2003F2A24 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4A0558AB22AD4AD2003F2A24 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		4A0558AF22AD54D4003F2A24 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4A0558B122AD55BC003F2A24 /* LoggingSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingSetting.swift; sourceTree = "<group>"; };
 		4A5BBB1A22A95A6200EA5D93 /* GithubClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -802,6 +804,7 @@
 			children = (
 				4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */,
 				4A5BBB2622A95A6300EA5D93 /* LaunchScreen.storyboard */,
+				4A0558B122AD55BC003F2A24 /* LoggingSetting.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -1549,6 +1552,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A0558B222AD55BC003F2A24 /* LoggingSetting.swift in Sources */,
 				4A5BBB1E22A95A6200EA5D93 /* AppDelegate.swift in Sources */,
 				E352CE5422AAA051001F4503 /* Constants.swift in Sources */,
 			);

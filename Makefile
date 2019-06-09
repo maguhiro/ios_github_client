@@ -5,6 +5,7 @@
 help:
 	@ echo '■使い方'
 	@ echo '  make setup               # セットアップ'
+	@ echo '  make config              # ファイル生成'
 	@ echo '  make bundle              # bundle install'
 	@ echo '  make mint                # mint bootstrap'
 	@ echo '  make carthage-bootstrap  # carthage bootstrap'
@@ -19,6 +20,13 @@ help:
 #
 .PHONY: setup
 setup: bundle mint pod carthage-bootstrap
+
+#
+# ファイル生成
+#
+.PHONY: config
+config:
+	./bin/fastlane ios generate_config
 
 #
 # Bundler

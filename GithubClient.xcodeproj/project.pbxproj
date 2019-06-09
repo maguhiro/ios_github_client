@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		27149191A4F7BC8D0A5FCE1B /* Pods_GithubPresentationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B43DC7033C079392A38FAECB /* Pods_GithubPresentationTests.framework */; };
 		4A05589622ACA196003F2A24 /* GithubOAuthConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A05589522ACA196003F2A24 /* GithubOAuthConstants.swift */; };
+		4A0558A022AD4011003F2A24 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A05589E22AD4011003F2A24 /* TopViewController.swift */; };
+		4A0558A322AD4134003F2A24 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A0558A222AD4134003F2A24 /* Images.xcassets */; };
+		4A0558A722AD48C2003F2A24 /* ImageAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0558A622AD48C2003F2A24 /* ImageAssets.swift */; };
+		4A0558AC22AD4AD2003F2A24 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0558AA22AD4AD2003F2A24 /* LoginViewController.swift */; };
+		4A0558AD22AD4AD2003F2A24 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0558AB22AD4AD2003F2A24 /* LoginViewController.xib */; };
 		4A5BBB1E22A95A6200EA5D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */; };
 		4A5BBB2022A95A6200EA5D93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5BBB1F22A95A6200EA5D93 /* ViewController.swift */; };
 		4A5BBB2322A95A6200EA5D93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2122A95A6200EA5D93 /* Main.storyboard */; };
@@ -225,6 +230,11 @@
 		47136D893F000FBE2466CDA0 /* Pods-GithubUsecase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubUsecase.release.xcconfig"; path = "../ios_github_client/Pods/Target Support Files/Pods-GithubUsecase/Pods-GithubUsecase.release.xcconfig"; sourceTree = "<group>"; };
 		4754EE898A17AD12FAB23991 /* Pods-GithubUtility.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubUtility.release.xcconfig"; path = "../ios_github_client/Pods/Target Support Files/Pods-GithubUtility/Pods-GithubUtility.release.xcconfig"; sourceTree = "<group>"; };
 		4A05589522ACA196003F2A24 /* GithubOAuthConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubOAuthConstants.swift; sourceTree = "<group>"; };
+		4A05589E22AD4011003F2A24 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		4A0558A222AD4134003F2A24 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4A0558A622AD48C2003F2A24 /* ImageAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAssets.swift; sourceTree = "<group>"; };
+		4A0558AA22AD4AD2003F2A24 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4A0558AB22AD4AD2003F2A24 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		4A5BBB1A22A95A6200EA5D93 /* GithubClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A5BBB1F22A95A6200EA5D93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -530,8 +540,57 @@
 			isa = PBXGroup;
 			children = (
 				4A05589422ACA05C003F2A24 /* Const */,
+				4A0558A622AD48C2003F2A24 /* ImageAssets.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		4A05589822AD3F6A003F2A24 /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				4A05589922AD3F7C003F2A24 /* VC */,
+			);
+			path = Top;
+			sourceTree = "<group>";
+		};
+		4A05589922AD3F7C003F2A24 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				4A05589E22AD4011003F2A24 /* TopViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		4A0558A422AD42F0003F2A24 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				4A0558A822AD4AA6003F2A24 /* Login */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		4A0558A522AD42F9003F2A24 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		4A0558A822AD4AA6003F2A24 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4A0558A922AD4AB1003F2A24 /* VC */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4A0558A922AD4AB1003F2A24 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				4A0558AA22AD4AD2003F2A24 /* LoginViewController.swift */,
+				4A0558AB22AD4AD2003F2A24 /* LoginViewController.xib */,
+			);
+			path = VC;
 			sourceTree = "<group>";
 		};
 		4A5BBB1122A95A6200EA5D93 = {
@@ -651,6 +710,7 @@
 			isa = PBXGroup;
 			children = (
 				4A9E14FC22AB6C1E0067C4FB /* Classes */,
+				4A0558A222AD4134003F2A24 /* Images.xcassets */,
 				4A9E149A22AB5E1D0067C4FB /* GithubView.h */,
 				4A9E149B22AB5E1D0067C4FB /* Info.plist */,
 			);
@@ -696,9 +756,9 @@
 		4A9E14FC22AB6C1E0067C4FB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				4A05589722ACA442003F2A24 /* Generated */,
-				4A9E14FF22AB6C410067C4FB /* ExternalAuth */,
 				4A9E14FD22AB6C290067C4FB /* App */,
+				4A9E14FF22AB6C410067C4FB /* ExternalAuth */,
+				4A05589722ACA442003F2A24 /* Generated */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -706,6 +766,9 @@
 		4A9E14FD22AB6C290067C4FB /* App */ = {
 			isa = PBXGroup;
 			children = (
+				4A0558A422AD42F0003F2A24 /* Account */,
+				4A0558A522AD42F9003F2A24 /* Repository */,
+				4A05589822AD3F6A003F2A24 /* Top */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -1184,6 +1247,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A0558AD22AD4AD2003F2A24 /* LoginViewController.xib in Resources */,
+				4A0558A322AD4134003F2A24 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1535,7 +1600,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A0558A022AD4011003F2A24 /* TopViewController.swift in Sources */,
 				4A05589622ACA196003F2A24 /* GithubOAuthConstants.swift in Sources */,
+				4A0558A722AD48C2003F2A24 /* ImageAssets.swift in Sources */,
+				4A0558AC22AD4AD2003F2A24 /* LoginViewController.swift in Sources */,
 				4A9E150422AB6FF20067C4FB /* GithubOAuth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

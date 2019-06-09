@@ -79,3 +79,10 @@ vendor/
 # cache
 /cache/swiftformat/*
 !/cache/swiftformat/.gitkeep
+
+# Secret
+config/secret.yml
+
+# Generated
+/GithubView/Classes/Const/*
+!/GithubView/Classes/Const/.gitkeep

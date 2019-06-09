@@ -27,7 +27,7 @@ platform :ios do
       print yaml
       erb(
         template: "#{ENV["APP_ROOT"]}/config/GithubOAuthConstants.swift.erb",
-        destination: "#{ENV["APP_ROOT"]}/GithubView/Classes/Const/GithubOAuthConstants.swift",
+        destination: "#{ENV["APP_ROOT"]}/GithubView/Classes/Generated/Const/GithubOAuthConstants.swift",
         placeholders: yaml
       )
     end

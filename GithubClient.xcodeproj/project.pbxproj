@@ -14,6 +14,7 @@
 		4A0558A722AD48C2003F2A24 /* ImageAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0558A622AD48C2003F2A24 /* ImageAssets.swift */; };
 		4A0558AC22AD4AD2003F2A24 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0558AA22AD4AD2003F2A24 /* LoginViewController.swift */; };
 		4A0558AD22AD4AD2003F2A24 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0558AB22AD4AD2003F2A24 /* LoginViewController.xib */; };
+		4A0558B022AD54D4003F2A24 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0558AF22AD54D4003F2A24 /* Constants.swift */; };
 		4A5BBB1E22A95A6200EA5D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */; };
 		4A5BBB2522A95A6300EA5D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */; };
 		4A5BBB2822A95A6300EA5D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2622A95A6300EA5D93 /* LaunchScreen.storyboard */; };
@@ -233,6 +234,7 @@
 		4A0558A622AD48C2003F2A24 /* ImageAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAssets.swift; sourceTree = "<group>"; };
 		4A0558AA22AD4AD2003F2A24 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4A0558AB22AD4AD2003F2A24 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		4A0558AF22AD54D4003F2A24 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4A5BBB1A22A95A6200EA5D93 /* GithubClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -589,6 +591,14 @@
 			path = VC;
 			sourceTree = "<group>";
 		};
+		4A0558AE22AD54A8003F2A24 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				4A0558AF22AD54D4003F2A24 /* Constants.swift */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
 		4A5BBB1122A95A6200EA5D93 = {
 			isa = PBXGroup;
 			children = (
@@ -753,6 +763,7 @@
 			isa = PBXGroup;
 			children = (
 				4A9E14FD22AB6C290067C4FB /* App */,
+				4A0558AE22AD54A8003F2A24 /* Const */,
 				4A9E14FF22AB6C410067C4FB /* ExternalAuth */,
 				4A05589722ACA442003F2A24 /* Generated */,
 			);
@@ -1597,6 +1608,7 @@
 				4A0558A722AD48C2003F2A24 /* ImageAssets.swift in Sources */,
 				4A0558AC22AD4AD2003F2A24 /* LoginViewController.swift in Sources */,
 				4A9E150422AB6FF20067C4FB /* GithubOAuth.swift in Sources */,
+				4A0558B022AD54D4003F2A24 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

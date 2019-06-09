@@ -1,3 +1,3 @@
 import GithubUtility
 
-public let log = Logger.shared
+let log = Logger.shared

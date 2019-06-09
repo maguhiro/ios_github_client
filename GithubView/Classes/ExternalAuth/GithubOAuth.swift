@@ -23,9 +23,11 @@ public final class GithubOAuth {
                     scope: GithubOAuthConstants.scope,
                     state: GithubOAuthConstants.state,
                     success: { credential, _, _ in
+                      log.d(credential.oauthToken)
                       self.delegate?.succeededGithubOAuth(self, accessToken: credential.oauthToken)
                     },
                     failure: { error in
+                      log.e(error.localizedDescription)
                       self.delegate?.failedGithubOAuth(self, error: error)
     })
   }

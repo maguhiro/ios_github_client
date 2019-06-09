@@ -7,6 +7,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    setRootViewController()
     return true
   }
 
@@ -26,5 +27,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     return false
+  }
+}
+
+private extension AppDelegate {
+  func setRootViewController() {
+    let topVC = TopViewController()
+    window?.rootViewController = topVC
   }
 }

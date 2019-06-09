@@ -1,5 +1,7 @@
 #!ruby
 
+require "yaml"
+
 opt_out_usage
 
 skip_docs
@@ -18,6 +20,19 @@ platform :ios do
   end
 
   # ===== public lane =====
+  desc "yamlからファイルの自動生成"
+  lane :generate_config do
+    Dir.chdir(ENV["APP_ROOT"]) do
+      yaml = YAML.load_file("config/secret.yml")
+      print yaml
+      erb(
+        template: "#{ENV["APP_ROOT"]}/config/GithubOAuthConstants.swift.erb",
+        destination: "#{ENV["APP_ROOT"]}/GithubView/Classes/Const/GithubOAuthConstants.swift",
+        placeholders: yaml
+      )
+    end
+  end
+
   desc "CocoaPodsで管理しているライブラリの最新化"
   lane :cocoapods_install do
    cocoapods(

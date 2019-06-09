@@ -5,6 +5,7 @@ excluded:
   - fastlane
   - Pods
   - vendor
+  - GithubView/Classes/Generated
 
 disabled_rules:
   - superfluous_disable_command # 状況によってはdisableとしたい時もある。理由を明記すればOK

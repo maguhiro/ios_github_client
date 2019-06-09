@@ -1,3 +1,4 @@
+import GithubView
 import UIKit
 
 @UIApplicationMain
@@ -18,4 +19,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func applicationDidBecomeActive(_: UIApplication) {}
 
   func applicationWillTerminate(_: UIApplication) {}
+
+  func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
+    if GithubOAuth.shared.handle(url: url) {
+      return true
+    }
+
+    return false
+  }
 }

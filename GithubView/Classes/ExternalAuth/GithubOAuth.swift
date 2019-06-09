@@ -1,9 +1,12 @@
 import OAuthSwift
 
+public protocol GithubOAuthDelegate: AnyObject {
+  func succeededGithubOAuth(_ oauth: GithubOAuth, accessToken: String)
+  func failedGithubOAuth(_ oauth: GithubOAuth, error: Error)
+}
+
 public final class GithubOAuth {
   public static let shared = GithubOAuth()
-
-  private init() {}
 
   private let oauth = OAuth2Swift(consumerKey: GithubOAuthConstants.clientID,
                                   consumerSecret: GithubOAuthConstants.clientSecret,
@@ -11,15 +14,19 @@ public final class GithubOAuth {
                                   accessTokenUrl: "https://github.com/login/oauth/access_token",
                                   responseType: "token")
 
+  public weak var delegate: GithubOAuthDelegate?
+
+  private init() {}
+
   func authorize() {
     oauth.authorize(withCallbackURL: GithubOAuthConstants.callbackURL,
                     scope: GithubOAuthConstants.scope,
                     state: GithubOAuthConstants.state,
                     success: { credential, _, _ in
-                      print(credential.oauthToken)
+                      self.delegate?.succeededGithubOAuth(self, accessToken: credential.oauthToken)
                     },
                     failure: { error in
-                      print(error.localizedDescription)
+                      self.delegate?.failedGithubOAuth(self, error: error)
     })
   }
 

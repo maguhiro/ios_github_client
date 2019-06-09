@@ -19,6 +19,19 @@ final class LoginViewController: UIViewController {
 
 private extension LoginViewController {
   @IBAction func didTapLoginBtn() {
+    GithubOAuth.shared.delegate = self
     GithubOAuth.shared.authorize()
+  }
+}
+
+// MARK: GithubOAuthDelegate
+
+extension LoginViewController: GithubOAuthDelegate {
+  func succeededGithubOAuth(_ oauth: GithubOAuth, accessToken: String) {
+    GithubOAuth.shared.delegate = nil
+  }
+
+  func failedGithubOAuth(_ oauth: GithubOAuth, error: Error) {
+    GithubOAuth.shared.delegate = nil
   }
 }

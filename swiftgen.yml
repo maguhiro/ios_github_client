@@ -1,0 +1,6 @@
+xcassets:
+  inputs:
+    - GithubView/Images.xcassets
+  outputs:
+    templateName: swift4
+    output: GithubView/Classes/Generated/ImageAssets.swift

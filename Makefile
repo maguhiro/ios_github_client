@@ -12,6 +12,7 @@ help:
 	@ echo '  make carthage-update     # carthage update'
 	@ echo '  make pod                 # pod install'
 	@ echo '  make ack                 # Acknowledgements生成'
+	@ echo '  make swiftgen            # SwiftGenの実行'
 	@ echo '  make lint                # lintチェック'
 	@ echo '  make code-format         # コードフォーマット'
 
@@ -19,7 +20,7 @@ help:
 # セットアップ
 #
 .PHONY: setup
-setup: bundle mint pod carthage-bootstrap
+setup: bundle mint pod carthage-bootstrap swiftgen
 
 #
 # ファイル生成
@@ -66,6 +67,13 @@ pod:
 .PHONY: ack
 ack:
 	./bin/fastlane ios generate_ack
+
+#
+# SwiftGenの実行
+#
+.PHONY: swiftgen
+swiftgen:
+	./Pods/SwiftGen/bin/swiftgen
 
 #
 # SwiftLint

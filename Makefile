@@ -14,7 +14,7 @@ help:
 	@ echo '  make ack                 # Acknowledgements生成'
 	@ echo '  make swiftgen            # SwiftGenの実行'
 	@ echo '  make lint                # lintチェック'
-	@ echo '  make code-format         # コードフォーマット'
+	@ echo '  make format              # コードフォーマット'
 
 #
 # セットアップ
@@ -85,6 +85,6 @@ lint:
 #
 # SwiftFormat
 #
-.PHONY: code-format
-code-format:
+.PHONY: format
+format:
 	mint run nicklockwood/SwiftFormat swiftformat . --cache ./cache/swiftformat/cache.swiftformat

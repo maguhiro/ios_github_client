@@ -15,5 +15,8 @@ github "SnapKit/SnapKit"                 ~> 5.0.0   # https://github.com/SnapKit
 # Authorization
 github "OAuthSwift/OAuthSwift"           ~> 1.4.0   # https://github.com/OAuthSwift/OAuthSwift/releases
 
+# DI
+github "ishkawa/DIKit"                   ~> 0.5.0   # https://github.com/ishkawa/DIKit/releases
+
 # Logger
 github "SwiftyBeaver/SwiftyBeaver"       ~> 1.7.0   # https://github.com/SwiftyBeaver/SwiftyBeaver/blob/master/CHANGELOG.md

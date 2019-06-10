@@ -96,3 +96,4 @@ format:
 .PHONY: dikitgen-repository
 dikitgen-repository:
 	mint run --silent ishkawa/DIKit dikitgen . --exclude Pods --exclude Carthage > GithubPresentation/Classes/Generated/RepositoryResolver.generated.swift
+	echo "import GithubUsecase" >> GithubPresentation/Classes/Generated/RepositoryResolver.generated.swift

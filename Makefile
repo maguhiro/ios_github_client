@@ -15,6 +15,7 @@ help:
 	@ echo '  make swiftgen            # SwiftGenの実行'
 	@ echo '  make lint                # lintチェック'
 	@ echo '  make format              # コードフォーマット'
+	@ echo '  make dikitgen-repository # DIKitGen(Repository)の実行'
 
 #
 # セットアップ
@@ -88,3 +89,10 @@ lint:
 .PHONY: format
 format:
 	mint run nicklockwood/SwiftFormat swiftformat . --cache ./cache/swiftformat/cache.swiftformat
+
+#
+# DIKitGen
+#
+.PHONY: dikitgen-repository
+dikitgen-repository:
+	mint run --silent ishkawa/DIKit dikitgen . --exclude Pods --exclude Carthage > GithubUsecase/Classes/Generated/RepositoryResolver.generated.swift

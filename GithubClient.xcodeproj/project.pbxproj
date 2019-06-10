@@ -1555,7 +1555,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "mint run --silent ishkawa/DIKit dikitgen . --exclude Pods --exclude Carthage > ${SRCROOT}/GithubUsecase/Classes/Generated/RepositoryResolver.generated.swift\n";
+			shellScript = "make dikitgen-repository\n";
 		};
 		50D841A6B5FEE81B780AA32B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

@@ -1,11 +1,13 @@
 import GithubUsecase
 
-final class AccountRepositoryImpl: AccountRepository {
-  func signIn(accessToken: String) {
+public final class AccountRepositoryImpl: AccountRepository {
+  public init() {}
+
+  public func signIn(accessToken: String) {
     KeychainHelper.saveAccessToken(accessToken)
   }
 
-  func singOut() {
+  public func singOut() {
     KeychainHelper.deleteAccessToken()
   }
 }

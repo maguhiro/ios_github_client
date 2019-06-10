@@ -30,6 +30,9 @@
 		4A06B5AF22AEAAA100BDBA18 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B5AE22AEAAA100BDBA18 /* LoginPresenter.swift */; };
 		4A06B5B122AEAB1F00BDBA18 /* RepositoryResolverHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B5B022AEAB1F00BDBA18 /* RepositoryResolverHolder.swift */; };
 		4A06B5B322AEAD2600BDBA18 /* RepositoryResolver.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B5B222AEAD2600BDBA18 /* RepositoryResolver.generated.swift */; };
+		4A06B5B622AEAF8F00BDBA18 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B5B522AEAF8F00BDBA18 /* Constants.swift */; };
+		4A06B5BA22AEAFB700BDBA18 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B5B922AEAFB700BDBA18 /* Constants.swift */; };
+		4A06B5BD22AEAFD700BDBA18 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B5BC22AEAFD700BDBA18 /* Constants.swift */; };
 		4A5BBB1E22A95A6200EA5D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */; };
 		4A5BBB2522A95A6300EA5D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */; };
 		4A5BBB2822A95A6300EA5D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2622A95A6300EA5D93 /* LaunchScreen.storyboard */; };
@@ -263,6 +266,9 @@
 		4A06B5AE22AEAAA100BDBA18 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		4A06B5B022AEAB1F00BDBA18 /* RepositoryResolverHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryResolverHolder.swift; sourceTree = "<group>"; };
 		4A06B5B222AEAD2600BDBA18 /* RepositoryResolver.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryResolver.generated.swift; sourceTree = "<group>"; };
+		4A06B5B522AEAF8F00BDBA18 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4A06B5B922AEAFB700BDBA18 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4A06B5BC22AEAFD700BDBA18 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4A5BBB1A22A95A6200EA5D93 /* GithubClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -642,6 +648,7 @@
 		4A06B58722AE9C3200BDBA18 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4A06B5B422AEAF8000BDBA18 /* Const */,
 				4A06B59D22AEA39400BDBA18 /* DI */,
 				4A06B58A22AE9C7E00BDBA18 /* Interactor */,
 				4A06B58822AE9C5A00BDBA18 /* Repository */,
@@ -754,6 +761,7 @@
 			isa = PBXGroup;
 			children = (
 				4A06B5A922AEAA6400BDBA18 /* App */,
+				4A06B5BB22AEAFCB00BDBA18 /* Const */,
 				4A06B5A422AEA56100BDBA18 /* Generated */,
 			);
 			path = Classes;
@@ -789,6 +797,38 @@
 				4A06B5AE22AEAAA100BDBA18 /* LoginPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4A06B5B422AEAF8000BDBA18 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				4A06B5B522AEAF8F00BDBA18 /* Constants.swift */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		4A06B5B722AEAFA400BDBA18 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4A06B5B822AEAFAC00BDBA18 /* Const */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4A06B5B822AEAFAC00BDBA18 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				4A06B5B922AEAFB700BDBA18 /* Constants.swift */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		4A06B5BB22AEAFCB00BDBA18 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				4A06B5BC22AEAFD700BDBA18 /* Constants.swift */,
+			);
+			path = Const;
 			sourceTree = "<group>";
 		};
 		4A5BBB1122A95A6200EA5D93 = {
@@ -853,6 +893,7 @@
 		4A9E143322AB5C1E0067C4FB /* GithubEntity */ = {
 			isa = PBXGroup;
 			children = (
+				4A06B5B722AEAFA400BDBA18 /* Classes */,
 				4A9E143422AB5C1E0067C4FB /* GithubEntity.h */,
 				4A9E143522AB5C1E0067C4FB /* Info.plist */,
 			);
@@ -1327,6 +1368,7 @@
 					};
 					4A9E143122AB5C1E0067C4FB = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					4A9E143922AB5C1E0067C4FB = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -1796,6 +1838,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A06B5BA22AEAFB700BDBA18 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1816,6 +1859,7 @@
 				4A06B59F22AEA3BA00BDBA18 /* RepositoryResolver.swift in Sources */,
 				4A06B59322AE9E1E00BDBA18 /* AuthorizationUsecase.swift in Sources */,
 				4A06B59622AE9E5600BDBA18 /* AuthorizationInteractor.swift in Sources */,
+				4A06B5B622AEAF8F00BDBA18 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1833,6 +1877,7 @@
 			files = (
 				4A06B5B322AEAD2600BDBA18 /* RepositoryResolver.generated.swift in Sources */,
 				4A06B5AF22AEAAA100BDBA18 /* LoginPresenter.swift in Sources */,
+				4A06B5BD22AEAFD700BDBA18 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2134,6 +2179,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2A6F66A7F61CEFB857C8D1B1 /* Pods-GithubEntity.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2152,6 +2198,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.maguhiro.GithubEntity;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2163,6 +2210,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BA901A55150C299BC80A8FE5 /* Pods-GithubEntity.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

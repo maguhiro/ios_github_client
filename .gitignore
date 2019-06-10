@@ -84,8 +84,8 @@ vendor/
 config/secret.yml
 
 # Generated
-/GithubUsecase/Classes/Generated/*
-!/GithubUsecase/Classes/Generated/.gitkeep
+/GithubPresentation/Classes/Generated/*
+!/GithubPresentation/Classes/Generated/.gitkeep
 
 /GithubView/Classes/Generated/*
 !/GithubView/Classes/Generated/.gitkeep

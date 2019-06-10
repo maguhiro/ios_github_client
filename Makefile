@@ -95,4 +95,4 @@ format:
 #
 .PHONY: dikitgen-repository
 dikitgen-repository:
-	mint run --silent ishkawa/DIKit dikitgen . --exclude Pods --exclude Carthage > GithubUsecase/Classes/Generated/RepositoryResolver.generated.swift
+	mint run --silent ishkawa/DIKit dikitgen . --exclude Pods --exclude Carthage > GithubPresentation/Classes/Generated/RepositoryResolver.generated.swift

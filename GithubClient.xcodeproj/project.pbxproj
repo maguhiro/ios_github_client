@@ -638,7 +638,6 @@
 		4A06B58722AE9C3200BDBA18 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				4A06B5A422AEA56100BDBA18 /* Generated */,
 				4A06B59D22AEA39400BDBA18 /* DI */,
 				4A06B58A22AE9C7E00BDBA18 /* Interactor */,
 				4A06B58822AE9C5A00BDBA18 /* Repository */,
@@ -746,6 +745,14 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
+		4A06B5A722AEAA1100BDBA18 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4A06B5A422AEA56100BDBA18 /* Generated */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		4A5BBB1122A95A6200EA5D93 = {
 			isa = PBXGroup;
 			children = (
@@ -845,6 +852,7 @@
 		4A9E147722AB5E010067C4FB /* GithubPresentation */ = {
 			isa = PBXGroup;
 			children = (
+				4A06B5A722AEAA1100BDBA18 /* Classes */,
 				4A9E147822AB5E010067C4FB /* GithubPresentation.h */,
 				4A9E147922AB5E010067C4FB /* Info.plist */,
 			);
@@ -1116,7 +1124,6 @@
 			buildPhases = (
 				CC65944AE54DDA2295C00064 /* [CP] Check Pods Manifest.lock */,
 				4A9E144F22AB5DDD0067C4FB /* Headers */,
-				4A06B5A322AEA4F500BDBA18 /* DIKitGen */,
 				4A9E145022AB5DDD0067C4FB /* Sources */,
 				4A9E145122AB5DDD0067C4FB /* Frameworks */,
 				4A9E145222AB5DDD0067C4FB /* Resources */,
@@ -1156,6 +1163,7 @@
 			buildPhases = (
 				867A201AE1915412CEFEC66C /* [CP] Check Pods Manifest.lock */,
 				4A9E147122AB5E010067C4FB /* Headers */,
+				4A06B5A822AEAA2A00BDBA18 /* DIKitGen */,
 				4A9E147222AB5E010067C4FB /* Sources */,
 				4A9E147322AB5E010067C4FB /* Frameworks */,
 				4A9E147422AB5E010067C4FB /* Resources */,
@@ -1539,7 +1547,7 @@
 			shellPath = /bin/sh;
 			shellScript = "make lint\n";
 		};
-		4A06B5A322AEA4F500BDBA18 /* DIKitGen */ = {
+		4A06B5A822AEAA2A00BDBA18 /* DIKitGen */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (

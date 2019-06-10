@@ -5,7 +5,7 @@ excluded:
   - fastlane
   - Pods
   - vendor
-  - GithubUsecase/Classes/Generated
+  - GithubPresentation/Classes/Generated
   - GithubView/Classes/Generated
 
 disabled_rules:

@@ -86,3 +86,6 @@ config/secret.yml
 # Generated
 /GithubView/Classes/Generated/*
 !/GithubView/Classes/Generated/.gitkeep
+!/GithubView/Classes/Generated/Const
+/GithubView/Classes/Generated/Const/*
+!/GithubView/Classes/Generated/Const/.gitkeep

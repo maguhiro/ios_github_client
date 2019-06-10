@@ -915,8 +915,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A5BBB2C22A95A6300EA5D93 /* Build configuration list for PBXNativeTarget "GithubClient" */;
 			buildPhases = (
-				4A0558B322AD589F003F2A24 /* SwiftLint */,
 				8F77E5D0C218BA552ADBEA58 /* [CP] Check Pods Manifest.lock */,
+				4A0558B322AD589F003F2A24 /* SwiftLint */,
 				4A5BBB1622A95A6200EA5D93 /* Sources */,
 				4A5BBB1722A95A6200EA5D93 /* Frameworks */,
 				4A5BBB1822A95A6200EA5D93 /* Resources */,

@@ -1,9 +1,5 @@
-//
-//  LoginPresenter.swift
-//  GithubPresentation
-//
-//  Created by maguhiro on 2019/06/11.
-//  Copyright © 2019 maguhiro. All rights reserved.
-//
+import GithubUsecase
 
-import Foundation
+public final class LoginPresenter {
+  private let authorizationUsecase: AuthorizationUsecase = RepositoryResolverHolder.shared.resolver.resolveAuthorizationInteractor()
+}

@@ -25,6 +25,8 @@
 		4A06B59A22AEA2B300BDBA18 /* DIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A06B59922AEA2B300BDBA18 /* DIKit.framework */; };
 		4A06B59B22AEA30300BDBA18 /* DIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A06B59922AEA2B300BDBA18 /* DIKit.framework */; };
 		4A06B59C22AEA31300BDBA18 /* DIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A06B59922AEA2B300BDBA18 /* DIKit.framework */; };
+		4A06B59F22AEA3BA00BDBA18 /* RepositoryResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B59E22AEA3BA00BDBA18 /* RepositoryResolver.swift */; };
+		4A06B5A222AEA40C00BDBA18 /* RepositoryResolverImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B5A122AEA40C00BDBA18 /* RepositoryResolverImpl.swift */; };
 		4A5BBB1E22A95A6200EA5D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */; };
 		4A5BBB2522A95A6300EA5D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */; };
 		4A5BBB2822A95A6300EA5D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2622A95A6300EA5D93 /* LaunchScreen.storyboard */; };
@@ -253,6 +255,8 @@
 		4A06B59522AE9E5600BDBA18 /* AuthorizationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractor.swift; sourceTree = "<group>"; };
 		4A06B59722AE9F5A00BDBA18 /* AccountRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRepositoryImpl.swift; sourceTree = "<group>"; };
 		4A06B59922AEA2B300BDBA18 /* DIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DIKit.framework; path = Carthage/Build/iOS/DIKit.framework; sourceTree = "<group>"; };
+		4A06B59E22AEA3BA00BDBA18 /* RepositoryResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryResolver.swift; sourceTree = "<group>"; };
+		4A06B5A122AEA40C00BDBA18 /* RepositoryResolverImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryResolverImpl.swift; sourceTree = "<group>"; };
 		4A5BBB1A22A95A6200EA5D93 /* GithubClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -632,9 +636,10 @@
 		4A06B58722AE9C3200BDBA18 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4A06B59D22AEA39400BDBA18 /* DI */,
 				4A06B58A22AE9C7E00BDBA18 /* Interactor */,
-				4A06B58922AE9C6C00BDBA18 /* Usecase */,
 				4A06B58822AE9C5A00BDBA18 /* Repository */,
+				4A06B58922AE9C6C00BDBA18 /* Usecase */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -712,6 +717,22 @@
 				4A06B59522AE9E5600BDBA18 /* AuthorizationInteractor.swift */,
 			);
 			path = Account;
+			sourceTree = "<group>";
+		};
+		4A06B59D22AEA39400BDBA18 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				4A06B59E22AEA3BA00BDBA18 /* RepositoryResolver.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		4A06B5A022AEA3F900BDBA18 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				4A06B5A122AEA40C00BDBA18 /* RepositoryResolverImpl.swift */,
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 		4A5BBB1122A95A6200EA5D93 = {
@@ -907,8 +928,9 @@
 		E352CDFC22AA8D77001F4503 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				E352CE5222AA9CF3001F4503 /* Const */,
 				E352CDFD22AA8D87001F4503 /* AppDelegate */,
+				E352CE5222AA9CF3001F4503 /* Const */,
+				4A06B5A022AEA3F900BDBA18 /* DI */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1689,6 +1711,7 @@
 				4A0558B222AD55BC003F2A24 /* LoggingSetting.swift in Sources */,
 				4A5BBB1E22A95A6200EA5D93 /* AppDelegate.swift in Sources */,
 				E352CE5422AAA051001F4503 /* Constants.swift in Sources */,
+				4A06B5A222AEA40C00BDBA18 /* RepositoryResolverImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1712,6 +1735,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A06B59022AE9D7000BDBA18 /* AccountRepository.swift in Sources */,
+				4A06B59F22AEA3BA00BDBA18 /* RepositoryResolver.swift in Sources */,
 				4A06B59322AE9E1E00BDBA18 /* AuthorizationUsecase.swift in Sources */,
 				4A06B59622AE9E5600BDBA18 /* AuthorizationInteractor.swift in Sources */,
 			);

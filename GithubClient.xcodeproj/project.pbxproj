@@ -27,6 +27,7 @@
 		4A06B59C22AEA31300BDBA18 /* DIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A06B59922AEA2B300BDBA18 /* DIKit.framework */; };
 		4A06B59F22AEA3BA00BDBA18 /* RepositoryResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B59E22AEA3BA00BDBA18 /* RepositoryResolver.swift */; };
 		4A06B5A222AEA40C00BDBA18 /* RepositoryResolverImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B5A122AEA40C00BDBA18 /* RepositoryResolverImpl.swift */; };
+		4A06B5A622AEA5D800BDBA18 /* RepositoryResolver.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B5A522AEA5D800BDBA18 /* RepositoryResolver.generated.swift */; };
 		4A5BBB1E22A95A6200EA5D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */; };
 		4A5BBB2522A95A6300EA5D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */; };
 		4A5BBB2822A95A6300EA5D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2622A95A6300EA5D93 /* LaunchScreen.storyboard */; };
@@ -257,6 +258,7 @@
 		4A06B59922AEA2B300BDBA18 /* DIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DIKit.framework; path = Carthage/Build/iOS/DIKit.framework; sourceTree = "<group>"; };
 		4A06B59E22AEA3BA00BDBA18 /* RepositoryResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryResolver.swift; sourceTree = "<group>"; };
 		4A06B5A122AEA40C00BDBA18 /* RepositoryResolverImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryResolverImpl.swift; sourceTree = "<group>"; };
+		4A06B5A522AEA5D800BDBA18 /* RepositoryResolver.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryResolver.generated.swift; sourceTree = "<group>"; };
 		4A5BBB1A22A95A6200EA5D93 /* GithubClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -636,6 +638,7 @@
 		4A06B58722AE9C3200BDBA18 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4A06B5A422AEA56100BDBA18 /* Generated */,
 				4A06B59D22AEA39400BDBA18 /* DI */,
 				4A06B58A22AE9C7E00BDBA18 /* Interactor */,
 				4A06B58822AE9C5A00BDBA18 /* Repository */,
@@ -733,6 +736,14 @@
 				4A06B5A122AEA40C00BDBA18 /* RepositoryResolverImpl.swift */,
 			);
 			path = DI;
+			sourceTree = "<group>";
+		};
+		4A06B5A422AEA56100BDBA18 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				4A06B5A522AEA5D800BDBA18 /* RepositoryResolver.generated.swift */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 		4A5BBB1122A95A6200EA5D93 = {
@@ -1105,6 +1116,7 @@
 			buildPhases = (
 				CC65944AE54DDA2295C00064 /* [CP] Check Pods Manifest.lock */,
 				4A9E144F22AB5DDD0067C4FB /* Headers */,
+				4A06B5A322AEA4F500BDBA18 /* DIKitGen */,
 				4A9E145022AB5DDD0067C4FB /* Sources */,
 				4A9E145122AB5DDD0067C4FB /* Frameworks */,
 				4A9E145222AB5DDD0067C4FB /* Resources */,
@@ -1527,6 +1539,24 @@
 			shellPath = /bin/sh;
 			shellScript = "make lint\n";
 		};
+		4A06B5A322AEA4F500BDBA18 /* DIKitGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = DIKitGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mint run --silent ishkawa/DIKit dikitgen . --exclude Pods --exclude Carthage > ${SRCROOT}/GithubUsecase/Classes/Generated/RepositoryResolver.generated.swift\n";
+		};
 		50D841A6B5FEE81B780AA32B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1734,6 +1764,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A06B5A622AEA5D800BDBA18 /* RepositoryResolver.generated.swift in Sources */,
 				4A06B59022AE9D7000BDBA18 /* AccountRepository.swift in Sources */,
 				4A06B59F22AEA3BA00BDBA18 /* RepositoryResolver.swift in Sources */,
 				4A06B59322AE9E1E00BDBA18 /* AuthorizationUsecase.swift in Sources */,

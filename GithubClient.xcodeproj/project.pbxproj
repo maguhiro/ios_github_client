@@ -33,6 +33,7 @@
 		4A06B5B622AEAF8F00BDBA18 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B5B522AEAF8F00BDBA18 /* Constants.swift */; };
 		4A06B5BA22AEAFB700BDBA18 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B5B922AEAFB700BDBA18 /* Constants.swift */; };
 		4A06B5BD22AEAFD700BDBA18 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B5BC22AEAFD700BDBA18 /* Constants.swift */; };
+		4A06B5BF22AFB42400BDBA18 /* GithubAPIExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B5BE22AFB42400BDBA18 /* GithubAPIExecutor.swift */; };
 		4A5BBB1E22A95A6200EA5D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */; };
 		4A5BBB2522A95A6300EA5D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */; };
 		4A5BBB2822A95A6300EA5D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2622A95A6300EA5D93 /* LaunchScreen.storyboard */; };
@@ -269,6 +270,7 @@
 		4A06B5B522AEAF8F00BDBA18 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4A06B5B922AEAFB700BDBA18 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4A06B5BC22AEAFD700BDBA18 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4A06B5BE22AFB42400BDBA18 /* GithubAPIExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPIExecutor.swift; sourceTree = "<group>"; };
 		4A5BBB1A22A95A6200EA5D93 /* GithubClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -712,6 +714,7 @@
 				4A9E14F922AB674A0067C4FB /* GithubAPI */,
 				4A9E14F722AB671D0067C4FB /* GithubAPI.swift */,
 				4A9E14F522AB635E0067C4FB /* NetworkReachability.swift */,
+				4A06B5BE22AFB42400BDBA18 /* GithubAPIExecutor.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -1908,6 +1911,7 @@
 			files = (
 				4A9E14F622AB635E0067C4FB /* NetworkReachability.swift in Sources */,
 				4A0558B622AD5B08003F2A24 /* KeychainHelper.swift in Sources */,
+				4A06B5BF22AFB42400BDBA18 /* GithubAPIExecutor.swift in Sources */,
 				4A9E14F822AB671D0067C4FB /* GithubAPI.swift in Sources */,
 				4A06B59822AE9F5A00BDBA18 /* AccountRepositoryImpl.swift in Sources */,
 				4A0558B922AD6182003F2A24 /* Constants.swift in Sources */,

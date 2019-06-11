@@ -3,18 +3,21 @@ import Foundation
 public final class RepositoryResolverHolder {
   public static let shared = RepositoryResolverHolder()
 
+  private var localResolver: RepositoryResolver?
   public var resolver: RepositoryResolver {
-    guard let innerResolver = innerResolver else {
-      fatalError("初期化されていません")
+    get {
+      guard let localResolver = localResolver else {
+        fatalError("初期化されていません")
+      }
+      return localResolver
     }
-    return innerResolver
+    set {
+      if localResolver != nil {
+        fatalError("初期化済みです")
+      }
+      localResolver = newValue
+    }
   }
-
-  private var innerResolver: RepositoryResolver?
 
   private init() {}
-
-  public func setUp(resolver: RepositoryResolver) {
-    innerResolver = resolver
-  }
 }

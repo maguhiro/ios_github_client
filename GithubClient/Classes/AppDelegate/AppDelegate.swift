@@ -9,7 +9,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     LoggingSetting.setUp()
-    RepositoryResolverHolder.shared.setUp(resolver: RepositoryResolverImpl())
+    RepositoryResolverHolder.shared.resolver = RepositoryResolverImpl()
     setRootViewController()
     return true
   }

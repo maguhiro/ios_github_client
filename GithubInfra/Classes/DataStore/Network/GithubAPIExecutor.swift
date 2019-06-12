@@ -16,7 +16,7 @@ enum GithubAPIExecutor {
     }
 
     return Alamofire
-      .request(api.url, method: api.metthod.alamofireMethod, parameters: api.params, headers: api.headers)
+      .request(api, method: api.metthod.alamofireMethod, parameters: api.params, headers: api.headers)
       .responseJSON { response in
         if let error = response.error {
           handler(.failure(error))

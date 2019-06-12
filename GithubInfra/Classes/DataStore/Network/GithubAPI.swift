@@ -14,26 +14,31 @@ enum HTTPMethod {
   }
 }
 
-protocol GithubAPI {
+protocol GithubAPI: URLConvertible {
   associatedtype Response: Codable
 
   var path: String { get }
   var metthod: HTTPMethod { get }
   var params: [String: Any]? { get }
+  var accessToken: String? { get }
 }
 
 extension GithubAPI {
-  var url: URL {
+  var accessToken: String? {
+    return KeychainHelper.loadAccessToken()
+  }
+
+  var headers: [String: String]? {
+    if let accessToken = self.accessToken {
+      return ["Authorization": "token \(accessToken)"]
+    }
+    return nil
+  }
+
+  func asURL() throws -> URL {
     // swiftlint:disable force_unwrapping
     // インスタンス生成できないケースは敢えてクラッシュさせたい
     return URL(string: "https://api.github.com/\(path)")!
     // swiftlint:enable force_unwrapping
-  }
-
-  var headers: [String: String]? {
-    if let accessToken = KeychainHelper.loadAccessToken() {
-      return ["Authorization": "token \(accessToken)"]
-    }
-    return nil
   }
 }

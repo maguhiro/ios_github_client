@@ -1,6 +1,8 @@
 import Foundation
 
-public struct User: Codable {
+public struct User: Entity {
   public let id: UserID
   public let name: String
+  public let createdAt: Date
+  public let updatedAt: Date
 }

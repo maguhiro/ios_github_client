@@ -1,6 +1,6 @@
 import Foundation
 
-public struct Account: Codable {
+public struct Account: Entity {
   public let accessToken: String
   public let user: User
 

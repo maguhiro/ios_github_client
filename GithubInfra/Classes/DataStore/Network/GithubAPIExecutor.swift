@@ -1,4 +1,5 @@
 import Alamofire
+import GithubUtility
 import RxSwift
 
 enum GithubAPIExecutorError: Error {
@@ -40,7 +41,7 @@ private extension GithubAPIExecutor {
       }
 
       do {
-        let result: T = try Constants.decoder.decode(T.self, from: data)
+        let result: T = try CodableConstants.decoder.decode(T.self, from: data)
         return .success(result)
       } catch {
         log.e(error.localizedDescription)

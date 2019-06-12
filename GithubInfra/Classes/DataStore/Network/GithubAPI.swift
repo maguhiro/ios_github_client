@@ -24,6 +24,14 @@ protocol GithubAPI: URLConvertible {
 }
 
 extension GithubAPI {
+  var metthod: HTTPMethod {
+    return .get
+  }
+
+  var params: [String: Any]? {
+    return nil
+  }
+
   var accessToken: String? {
     return KeychainHelper.loadAccessToken()
   }

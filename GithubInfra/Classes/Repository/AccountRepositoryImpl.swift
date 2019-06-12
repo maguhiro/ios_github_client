@@ -7,7 +7,7 @@ public final class AccountRepositoryImpl: AccountRepository {
     GithubAPIExecutor.request(api: AccountAPI(accessToken: accessToken)) { result in
       switch result {
       case .success(let value):
-        log.i(value.name)
+        log.i(value.description)
         KeychainHelper.saveAccessToken(accessToken)
       case .failure(let error):
         log.i(error.localizedDescription)

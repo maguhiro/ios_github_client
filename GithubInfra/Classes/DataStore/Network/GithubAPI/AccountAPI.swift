@@ -1,9 +1,4 @@
-import Foundation
-
-struct User: Codable {
-  let id: Int
-  let name: String
-}
+import GithubEntity
 
 struct AccountAPI: GithubAPI {
   typealias Response = User

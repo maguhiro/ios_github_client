@@ -120,6 +120,10 @@ explicit_init:
 force_unwrapping:
   severity: error
 
+identifier_name:
+  excluded:
+    - id
+
 legacy_cggeometry_functions:
   severity: error
 

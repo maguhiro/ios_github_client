@@ -10,3 +10,9 @@ public struct Account: Entity {
     self.user = user
   }
 }
+
+public extension Optional where Wrapped == Account {
+  var isLogined: Bool {
+    return self != nil
+  }
+}

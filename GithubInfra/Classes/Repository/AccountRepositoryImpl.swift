@@ -1,3 +1,4 @@
+import GithubEntity
 import GithubUsecase
 
 public final class AccountRepositoryImpl: AccountRepository {
@@ -6,9 +7,10 @@ public final class AccountRepositoryImpl: AccountRepository {
   public func signIn(accessToken: String) {
     GithubAPIExecutor.request(api: AccountAPI(accessToken: accessToken)) { result in
       switch result {
-      case .success(let value):
-        log.i(value.description)
-        KeychainHelper.saveAccessToken(accessToken)
+      case .success(let user):
+        let account = Account(accessToken: accessToken, user: user)
+        log.i(account)
+        KeychainHelper.saveAccount(account)
       case .failure(let error):
         log.i(error.localizedDescription)
       }
@@ -16,6 +18,6 @@ public final class AccountRepositoryImpl: AccountRepository {
   }
 
   public func singOut() {
-    KeychainHelper.deleteAccessToken()
+    KeychainHelper.deleteAccount()
   }
 }

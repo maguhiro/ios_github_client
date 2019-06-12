@@ -1,3 +1,4 @@
+import GithubEntity
 import KeychainAccess
 
 private struct KeychainKey<T: Codable> {
@@ -9,7 +10,7 @@ enum KeychainHelper {
   private static let encoder = JSONEncoder()
   private static let decoder = JSONDecoder()
 
-  private static let keyAccessToken = KeychainKey<String>(key: "access_token")
+  private static let keyAccount = KeychainKey<Account>(key: "account")
 }
 
 private extension KeychainHelper {
@@ -44,15 +45,15 @@ private extension KeychainHelper {
 }
 
 extension KeychainHelper {
-  static func saveAccessToken(_ token: String) {
-    save(key: keyAccessToken, value: token)
+  static func saveAccount(_ account: Account) {
+    save(key: keyAccount, value: account)
   }
 
-  static func deleteAccessToken() {
-    delete(key: keyAccessToken)
+  static func deleteAccount() {
+    delete(key: keyAccount)
   }
 
-  static func loadAccessToken() -> String? {
-    return load(key: keyAccessToken)
+  static func loadAccount() -> Account? {
+    return load(key: keyAccount)
   }
 }

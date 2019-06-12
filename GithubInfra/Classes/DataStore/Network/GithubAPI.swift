@@ -33,7 +33,7 @@ extension GithubAPI {
   }
 
   var accessToken: String? {
-    return KeychainHelper.loadAccessToken()
+    return KeychainHelper.loadAccount()?.accessToken
   }
 
   var headers: [String: String]? {

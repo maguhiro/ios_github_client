@@ -134,7 +134,7 @@ legacy_constructor:
   severity: error
 
 line_length:
-  warning: 150
+  warning: 180
 
 modifier_order:
   # SwiftFormatの順序に合わせる

@@ -19,23 +19,23 @@ public final class Logger {
 // MARK: ログ出力メソッド
 
 public extension Logger {
-  func v(_ message: String, context: Any? = nil, functionName: String = #function, fileName: String = #file, lineNumber: Int = #line) {
+  func v(_ message: CustomStringConvertible, context: Any? = nil, functionName: String = #function, fileName: String = #file, lineNumber: Int = #line) {
     print(.verbose, message: message, context: context, functionName: functionName, fileName: fileName, lineNumber: lineNumber)
   }
 
-  func d(_ message: String, context: Any? = nil, functionName: String = #function, fileName: String = #file, lineNumber: Int = #line) {
+  func d(_ message: CustomStringConvertible, context: Any? = nil, functionName: String = #function, fileName: String = #file, lineNumber: Int = #line) {
     print(.debug, message: message, context: context, functionName: functionName, fileName: fileName, lineNumber: lineNumber)
   }
 
-  func i(_ message: String, context: Any? = nil, functionName: String = #function, fileName: String = #file, lineNumber: Int = #line) {
+  func i(_ message: CustomStringConvertible, context: Any? = nil, functionName: String = #function, fileName: String = #file, lineNumber: Int = #line) {
     print(.info, message: message, context: context, functionName: functionName, fileName: fileName, lineNumber: lineNumber)
   }
 
-  func w(_ message: String, context: Any? = nil, functionName: String = #function, fileName: String = #file, lineNumber: Int = #line) {
+  func w(_ message: CustomStringConvertible, context: Any? = nil, functionName: String = #function, fileName: String = #file, lineNumber: Int = #line) {
     print(.warning, message: message, context: context, functionName: functionName, fileName: fileName, lineNumber: lineNumber)
   }
 
-  func e(_ message: String, context: Any? = nil, functionName: String = #function, fileName: String = #file, lineNumber: Int = #line) {
+  func e(_ message: CustomStringConvertible, context: Any? = nil, functionName: String = #function, fileName: String = #file, lineNumber: Int = #line) {
     print(.error, message: message, context: context, functionName: functionName, fileName: fileName, lineNumber: lineNumber)
   }
 }
@@ -44,12 +44,12 @@ public extension Logger {
 // SwiftyBeaverに渡す引数に対応するため
 private extension Logger {
   func print(_ logLevel: SwiftyBeaver.Level,
-             message: String,
+             message: CustomStringConvertible,
              context: Any?,
              functionName: String,
              fileName: String,
              lineNumber: Int) {
-    SwiftyBeaver.custom(level: logLevel, message: message, file: fileName, function: functionName, line: lineNumber, context: context)
+    SwiftyBeaver.custom(level: logLevel, message: message.description, file: fileName, function: functionName, line: lineNumber, context: context)
   }
 }
 

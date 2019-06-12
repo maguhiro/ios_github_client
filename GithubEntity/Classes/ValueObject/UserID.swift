@@ -7,3 +7,9 @@ public struct UserID: ValueObject {
     self.value = value
   }
 }
+
+extension UserID: Equatable {
+  public static func == (lhs: UserID, rhs: UserID) -> Bool {
+    return lhs.value == rhs.value
+  }
+}

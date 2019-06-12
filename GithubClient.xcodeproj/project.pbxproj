@@ -34,6 +34,7 @@
 		4A06B5BA22AEAFB700BDBA18 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B5B922AEAFB700BDBA18 /* Constants.swift */; };
 		4A06B5BD22AEAFD700BDBA18 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B5BC22AEAFD700BDBA18 /* Constants.swift */; };
 		4A06B5BF22AFB42400BDBA18 /* GithubAPIExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B5BE22AFB42400BDBA18 /* GithubAPIExecutor.swift */; };
+		4A06B5C222B13D2D00BDBA18 /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B5C122B13D2D00BDBA18 /* Optional+Extension.swift */; };
 		4A5BBB1E22A95A6200EA5D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */; };
 		4A5BBB2522A95A6300EA5D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */; };
 		4A5BBB2822A95A6300EA5D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2622A95A6300EA5D93 /* LaunchScreen.storyboard */; };
@@ -278,6 +279,7 @@
 		4A06B5B922AEAFB700BDBA18 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4A06B5BC22AEAFD700BDBA18 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4A06B5BE22AFB42400BDBA18 /* GithubAPIExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPIExecutor.swift; sourceTree = "<group>"; };
+		4A06B5C122B13D2D00BDBA18 /* Optional+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extension.swift"; sourceTree = "<group>"; };
 		4A5BBB1A22A95A6200EA5D93 /* GithubClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -851,6 +853,14 @@
 			path = Const;
 			sourceTree = "<group>";
 		};
+		4A06B5C022B13D1200BDBA18 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4A06B5C122B13D2D00BDBA18 /* Optional+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		4A5BBB1122A95A6200EA5D93 = {
 			isa = PBXGroup;
 			children = (
@@ -1070,6 +1080,7 @@
 			isa = PBXGroup;
 			children = (
 				E3ED80BF22B120890054FAC6 /* Const */,
+				4A06B5C022B13D1200BDBA18 /* Extension */,
 				E352CE4F22AA9B2F001F4503 /* Logger */,
 			);
 			path = Classes;
@@ -1990,6 +2001,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3ED80C122B120990054FAC6 /* CodableConstants.swift in Sources */,
+				4A06B5C222B13D2D00BDBA18 /* Optional+Extension.swift in Sources */,
 				E352CE5122AA9B38001F4503 /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

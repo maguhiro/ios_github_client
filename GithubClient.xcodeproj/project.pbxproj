@@ -111,6 +111,7 @@
 		E352CE4D22AA9B16001F4503 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E352CE4C22AA9B16001F4503 /* SwiftyBeaver.framework */; };
 		E352CE5122AA9B38001F4503 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E352CE5022AA9B38001F4503 /* Logger.swift */; };
 		E352CE5422AAA051001F4503 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E352CE5322AAA051001F4503 /* Constants.swift */; };
+		E3ED80AC22B1052B0054FAC6 /* AccountAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ED80AB22B1052B0054FAC6 /* AccountAPI.swift */; };
 		E54B4D3DC231DFDFD909352C /* Pods_GithubView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292DADFD6FDBC5B362FEC40B /* Pods_GithubView.framework */; };
 /* End PBXBuildFile section */
 
@@ -350,6 +351,7 @@
 		E352CE4C22AA9B16001F4503 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/iOS/SwiftyBeaver.framework; sourceTree = "<group>"; };
 		E352CE5022AA9B38001F4503 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		E352CE5322AAA051001F4503 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E3ED80AB22B1052B0054FAC6 /* AccountAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAPI.swift; sourceTree = "<group>"; };
 		E781B4396B0CE8A34A92F649 /* Pods_GithubEntityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubEntityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB7CE09E3E0DEBEB2FB9ED90 /* Pods-GithubEntityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubEntityTests.release.xcconfig"; path = "../ios_github_client/Pods/Target Support Files/Pods-GithubEntityTests/Pods-GithubEntityTests.release.xcconfig"; sourceTree = "<group>"; };
 		EF2AE28A5CB5667B8942B3C0 /* Pods_GithubUsecaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubUsecaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -711,7 +713,7 @@
 		4A06B58E22AE9D2400BDBA18 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				4A9E14F922AB674A0067C4FB /* GithubAPI */,
+				E3ED80AA22B105200054FAC6 /* GithubAPI */,
 				4A9E14F722AB671D0067C4FB /* GithubAPI.swift */,
 				4A9E14F522AB635E0067C4FB /* NetworkReachability.swift */,
 				4A06B5BE22AFB42400BDBA18 /* GithubAPIExecutor.swift */,
@@ -990,13 +992,6 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		4A9E14F922AB674A0067C4FB /* GithubAPI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = GithubAPI;
-			sourceTree = "<group>";
-		};
 		4A9E14FC22AB6C1E0067C4FB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -1078,6 +1073,14 @@
 				E352CE5322AAA051001F4503 /* Constants.swift */,
 			);
 			path = Const;
+			sourceTree = "<group>";
+		};
+		E3ED80AA22B105200054FAC6 /* GithubAPI */ = {
+			isa = PBXGroup;
+			children = (
+				E3ED80AB22B1052B0054FAC6 /* AccountAPI.swift */,
+			);
+			path = GithubAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1914,6 +1917,7 @@
 				4A06B5BF22AFB42400BDBA18 /* GithubAPIExecutor.swift in Sources */,
 				4A9E14F822AB671D0067C4FB /* GithubAPI.swift in Sources */,
 				4A06B59822AE9F5A00BDBA18 /* AccountRepositoryImpl.swift in Sources */,
+				E3ED80AC22B1052B0054FAC6 /* AccountAPI.swift in Sources */,
 				4A0558B922AD6182003F2A24 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

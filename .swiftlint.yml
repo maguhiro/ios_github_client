@@ -31,7 +31,7 @@ opt_in_rules:
   - empty_string
   #- empty_xctest_method XCTest使わない
   #- explicit_acl internalも全て明記するのを避けたい
-  - explicit_enum_raw_value
+  #- explicit_enum_raw_value CodingKeyのenumでわざわざ書きたくない
   - explicit_init
   #- explicit_self 毎度全てselfは書かない
   #- explicit_top_level_acl internalも全て明記するのを避けたい

@@ -1102,8 +1102,8 @@
 		E3ED80B122B10A8F0054FAC6 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				E3ED80B222B10A9F0054FAC6 /* User.swift */,
 				E3ED80B422B10AD70054FAC6 /* Account.swift */,
+				E3ED80B222B10A9F0054FAC6 /* User.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";

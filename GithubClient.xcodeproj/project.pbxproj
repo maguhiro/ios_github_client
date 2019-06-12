@@ -115,6 +115,7 @@
 		E3ED80B022B10A5E0054FAC6 /* UserID.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ED80AF22B10A5E0054FAC6 /* UserID.swift */; };
 		E3ED80B322B10A9F0054FAC6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ED80B222B10A9F0054FAC6 /* User.swift */; };
 		E3ED80B522B10AD70054FAC6 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ED80B422B10AD70054FAC6 /* Account.swift */; };
+		E3ED80B722B110BA0054FAC6 /* ValueObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ED80B622B110BA0054FAC6 /* ValueObject.swift */; };
 		E54B4D3DC231DFDFD909352C /* Pods_GithubView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292DADFD6FDBC5B362FEC40B /* Pods_GithubView.framework */; };
 /* End PBXBuildFile section */
 
@@ -358,6 +359,7 @@
 		E3ED80AF22B10A5E0054FAC6 /* UserID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserID.swift; sourceTree = "<group>"; };
 		E3ED80B222B10A9F0054FAC6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E3ED80B422B10AD70054FAC6 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		E3ED80B622B110BA0054FAC6 /* ValueObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueObject.swift; sourceTree = "<group>"; };
 		E781B4396B0CE8A34A92F649 /* Pods_GithubEntityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubEntityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB7CE09E3E0DEBEB2FB9ED90 /* Pods-GithubEntityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubEntityTests.release.xcconfig"; path = "../ios_github_client/Pods/Target Support Files/Pods-GithubEntityTests/Pods-GithubEntityTests.release.xcconfig"; sourceTree = "<group>"; };
 		EF2AE28A5CB5667B8942B3C0 /* Pods_GithubUsecaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubUsecaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -822,6 +824,7 @@
 			isa = PBXGroup;
 			children = (
 				4A06B5B822AEAFAC00BDBA18 /* Const */,
+				E3ED80B822B1113D0054FAC6 /* Core */,
 				E3ED80B122B10A8F0054FAC6 /* Entity */,
 				E3ED80AE22B10A4F0054FAC6 /* ValueObject */,
 			);
@@ -1106,6 +1109,14 @@
 				E3ED80B222B10A9F0054FAC6 /* User.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		E3ED80B822B1113D0054FAC6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E3ED80B622B110BA0054FAC6 /* ValueObject.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1873,6 +1884,7 @@
 				E3ED80B522B10AD70054FAC6 /* Account.swift in Sources */,
 				E3ED80B022B10A5E0054FAC6 /* UserID.swift in Sources */,
 				E3ED80B322B10A9F0054FAC6 /* User.swift in Sources */,
+				E3ED80B722B110BA0054FAC6 /* ValueObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

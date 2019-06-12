@@ -24,23 +24,35 @@ enum GithubAPIExecutor {
     return Alamofire
       .request(api, method: api.metthod.alamofireMethod, parameters: api.params, headers: api.headers)
       .responseJSON { response in
-        if let error = response.error {
-          handler(.failure(error))
-          return
-        }
-
-        guard let data = response.data else {
-          handler(.failure(GithubAPIExecutorError.noneBody))
-          return
-        }
-
-        do {
-          let result: T.Response = try decoder.decode(T.Response.self, from: data)
-          handler(.success(result))
-        } catch {
-          handler(.failure(error))
-        }
+        handler(handle(response: response))
       }
+  }
+}
+
+private extension GithubAPIExecutor {
+  static func handle<T: Codable>(response: DataResponse<Any>) -> Swift.Result<T, Error> {
+    if let url = response.request?.url {
+      log.d("API Call : \(url)")
+    }
+    log.d(response.description)
+
+    switch response.result {
+    case .failure(let error):
+      log.e(error.localizedDescription)
+      return .failure(error)
+    case .success:
+      guard let data = response.data else {
+        return .failure(GithubAPIExecutorError.noneBody)
+      }
+
+      do {
+        let result: T = try decoder.decode(T.self, from: data)
+        return .success(result)
+      } catch {
+        log.e(error.localizedDescription)
+        return .failure(error)
+      }
+    }
   }
 }
 

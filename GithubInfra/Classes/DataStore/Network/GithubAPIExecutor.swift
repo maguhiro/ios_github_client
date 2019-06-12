@@ -7,12 +7,6 @@ enum GithubAPIExecutorError: Error {
 }
 
 enum GithubAPIExecutor {
-  private static var decoder: JSONDecoder = {
-    let decoder = JSONDecoder()
-    decoder.keyDecodingStrategy = .convertFromSnakeCase
-    return decoder
-  }()
-
   @discardableResult
   static func request<T: GithubAPI>(api: T,
                                     handler: @escaping (Swift.Result<T.Response, Error>) -> Void) -> DataRequest? {
@@ -46,7 +40,7 @@ private extension GithubAPIExecutor {
       }
 
       do {
-        let result: T = try decoder.decode(T.self, from: data)
+        let result: T = try Constants.decoder.decode(T.self, from: data)
         return .success(result)
       } catch {
         log.e(error.localizedDescription)

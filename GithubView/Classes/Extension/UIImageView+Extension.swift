@@ -6,4 +6,8 @@ extension UIImageView {
     let options = ImageLoadingOptions(placeholder: placeholder, transition: .fadeIn(duration: 0.3))
     Nuke.loadImage(with: url, options: options, into: self)
   }
+
+  func cancel() {
+    Nuke.cancelRequest(for: self)
+  }
 }

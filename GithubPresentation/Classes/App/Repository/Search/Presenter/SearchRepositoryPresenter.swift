@@ -13,7 +13,7 @@ public final class SearchRepositoryPresenter {
   private let disposeBag = DisposeBag()
 
   public weak var view: SearchRepositoryView?
-  private var result: SearchRepositoryResult?
+  private var result = SearchRepositoryResult()
 
   public init() {}
 }
@@ -21,6 +21,10 @@ public final class SearchRepositoryPresenter {
 // MARK: Viewからの通知
 
 public extension SearchRepositoryPresenter {
+  func showPage() {
+    view?.render(viewModel: SearchRepositoryViewModel(result: result))
+  }
+
   func search(query: String) {
     searchUsecase.search(query: query) { [weak self] result in
       switch result {

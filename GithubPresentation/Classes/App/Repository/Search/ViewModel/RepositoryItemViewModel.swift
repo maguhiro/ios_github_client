@@ -9,7 +9,15 @@ public struct RepositoryItemViewModel {
 }
 
 public extension RepositoryItemViewModel {
+  var iconURL: URL {
+    return repository.owner.avatarUrl
+  }
+
   var repositoryName: String {
     return repository.fullName
+  }
+
+  var description: String? {
+    return repository.description
   }
 }

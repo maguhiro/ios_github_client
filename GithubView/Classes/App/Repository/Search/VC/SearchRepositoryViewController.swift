@@ -9,8 +9,9 @@ final class SearchRepositoryViewController: UIViewController {
 
   private let searchBar = UISearchBar()
   @IBOutlet private var tableView: UITableView!
-
-  private var viewModel: SearchRepositoryViewModel?
+  // swiftlint:disable implicitly_unwrapped_optional
+  private var viewModel: SearchRepositoryViewModel!
+  // swiftlint:enable implicitly_unwrapped_optional
 
   init() {
     super.init(nibName: nil, bundle: Bundle(for: SearchRepositoryViewController.self))
@@ -29,6 +30,7 @@ final class SearchRepositoryViewController: UIViewController {
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     presenter.view = self
+    presenter.showPage()
   }
 
   override func viewDidDisappear(_ animated: Bool) {
@@ -41,6 +43,9 @@ private extension SearchRepositoryViewController {
   func initalizeView() {
     tableView.delegate = self
     tableView.dataSource = self
+    tableView.register(UINib(nibName: String(describing: RepositoryItemTableViewCell.self),
+                             bundle: Bundle(for: RepositoryItemTableViewCell.self)),
+                       forCellReuseIdentifier: String(describing: RepositoryItemTableViewCell.self))
 
     navigationItem.titleView = searchBar
     searchBar.rx.text.orEmpty
@@ -68,12 +73,16 @@ extension SearchRepositoryViewController: SearchRepositoryView {
 
 extension SearchRepositoryViewController: UITableViewDelegate, UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return viewModel?.repositoryItemList.count ?? 0
+    return viewModel.repositoryItemList.count
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
-    cell.textLabel?.text = viewModel?.repositoryItemList[indexPath.row].repositoryName
+    // swiftlint:disable force_cast
+    let cell: RepositoryItemTableViewCell = tableView
+      .dequeueReusableCell(withIdentifier: String(describing: RepositoryItemTableViewCell.self),
+                           for: indexPath) as! RepositoryItemTableViewCell
+    // swiftlint:enable force_cast
+    cell.render(viewModel: viewModel.repositoryItemList[indexPath.row])
     return cell
   }
 }

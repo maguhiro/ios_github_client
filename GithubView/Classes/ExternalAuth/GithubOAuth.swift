@@ -7,6 +7,7 @@ public protocol GithubOAuthDelegate: AnyObject {
 
 public final class GithubOAuth {
   public static let shared = GithubOAuth()
+  private let scope = "user"
 
   private let oauth = OAuth2Swift(consumerKey: GithubOAuthConstants.clientID,
                                   consumerSecret: GithubOAuthConstants.clientSecret,
@@ -20,7 +21,7 @@ public final class GithubOAuth {
 
   func authorize() {
     oauth.authorize(withCallbackURL: GithubOAuthConstants.callbackURL,
-                    scope: GithubOAuthConstants.scope,
+                    scope: scope,
                     state: GithubOAuthConstants.state,
                     success: { credential, _, _ in
                       log.d(credential.oauthToken)

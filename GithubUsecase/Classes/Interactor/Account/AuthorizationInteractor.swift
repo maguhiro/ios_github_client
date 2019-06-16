@@ -1,4 +1,5 @@
 import DIKit
+import GithubEntity
 import RxSwift
 
 public final class AuthorizationInteractor: AuthorizationUsecase, Injectable {
@@ -17,14 +18,15 @@ public final class AuthorizationInteractor: AuthorizationUsecase, Injectable {
     self.accountRepository = dependency.accountRepository
   }
 
-  public func signIn(accessToken: String) {
+  public func signIn(accessToken: String, completion: @escaping (Result<Account, Error>) -> Void) {
     accountRepository
       .signIn(accessToken: accessToken)
-      .subscribe(onSuccess: { _ in
-        log.i("成功")
+      .observeOn(MainScheduler.instance)
+      .subscribe(onSuccess: { value in
+        completion(.success(value))
       },
-                 onError: { _ in
-        log.i("失敗")
+                 onError: { error in
+        completion(.failure(error))
       })
       .disposed(by: disposeBag)
   }

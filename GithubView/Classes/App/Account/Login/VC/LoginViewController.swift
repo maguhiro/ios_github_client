@@ -3,6 +3,7 @@ import UIKit
 
 final class LoginViewController: UIViewController {
   private let presenter = LoginPresenter()
+  private let indicatorVC = IndicatorViewController()
 
   init() {
     super.init(nibName: nil, bundle: Bundle(for: LoginViewController.self))
@@ -44,7 +45,11 @@ extension LoginViewController: GithubOAuthDelegate {
 // MARK: LoginPresenterView
 
 extension LoginViewController: LoginView {
-  func succeededSignIn() {
-    log.i("succeededSignIn")
+  func showFullScreenLoading() {
+    present(indicatorVC, animated: false)
+  }
+
+  func hideFullScreenLoading() {
+    indicatorVC.dismiss(animated: false)
   }
 }

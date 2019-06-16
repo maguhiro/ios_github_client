@@ -1,7 +1,8 @@
 import GithubUsecase
 
 public protocol LoginView: AnyObject {
-  func succeededSignIn()
+  func showFullScreenLoading()
+  func hideFullScreenLoading()
 }
 
 public final class LoginPresenter {
@@ -16,7 +17,15 @@ public final class LoginPresenter {
 
 public extension LoginPresenter {
   func signIn(accessToken: String) {
-    authorizationUsecase.signIn(accessToken: accessToken)
-    view?.succeededSignIn()
+    view?.showFullScreenLoading()
+    authorizationUsecase.signIn(accessToken: accessToken) { [weak self] result in
+      self?.view?.hideFullScreenLoading()
+      switch result {
+      case .success:
+        break
+      case .failure:
+        break
+      }
+    }
   }
 }

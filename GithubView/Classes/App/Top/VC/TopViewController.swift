@@ -15,12 +15,18 @@ public final class TopViewController: UITabBarController {
 
   public override func viewDidLoad() {
     super.viewDidLoad()
+    initializeTabBarViewControllers()
+  }
+}
 
-    // FIXME: 正しいVCを設定する
-    let searchVC = LoginViewController()
-    searchVC.tabBarItem = searchTabItem
+private extension TopViewController {
+  func initializeTabBarViewControllers() {
+    let searchVC = SearchRepositoryViewController()
+    let naviVC = UINavigationController(rootViewController: searchVC)
+    naviVC.tabBarItem = searchTabItem
+
     let accountVC = AccountContainerViewController()
     accountVC.tabBarItem = accountTabItem
-    setViewControllers([searchVC, accountVC], animated: false)
+    setViewControllers([naviVC, accountVC], animated: false)
   }
 }

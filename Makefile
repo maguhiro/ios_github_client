@@ -21,7 +21,7 @@ help:
 # セットアップ
 #
 .PHONY: setup
-setup: bundle mint pod carthage-bootstrap swiftgen
+setup: bundle mint pod carthage-bootstrap swiftgen config
 
 #
 # ファイル生成

@@ -2,7 +2,8 @@ import GithubUsecase
 
 public protocol LoginView: AnyObject {
   func showFullScreenLoading()
-  func hideFullScreenLoading()
+  func hideFullScreenLoading(completion: @escaping () -> Void)
+  func showAlert(title: String?, message: String?)
 }
 
 public final class LoginPresenter {
@@ -19,12 +20,13 @@ public extension LoginPresenter {
   func signIn(accessToken: String) {
     view?.showFullScreenLoading()
     authorizationUsecase.signIn(accessToken: accessToken) { [weak self] result in
-      self?.view?.hideFullScreenLoading()
-      switch result {
-      case .success:
-        break
-      case .failure:
-        break
+      self?.view?.hideFullScreenLoading {
+        switch result {
+        case .success:
+          break
+        case .failure:
+          self?.view?.showAlert(title: "認証に失敗しました", message: nil)
+        }
       }
     }
   }

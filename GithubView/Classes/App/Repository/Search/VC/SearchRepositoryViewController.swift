@@ -41,6 +41,8 @@ final class SearchRepositoryViewController: UIViewController {
 
 private extension SearchRepositoryViewController {
   func initalizeView() {
+    tableView.estimatedRowHeight = 40
+    tableView.rowHeight = UITableView.automaticDimension
     tableView.delegate = self
     tableView.dataSource = self
     tableView.register(UINib(nibName: String(describing: RepositoryItemTableViewCell.self),

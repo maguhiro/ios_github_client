@@ -1,7 +1,10 @@
+import RxCocoa
+import RxSwift
 import UIKit
 
-class SearchRepositoryViewController: UIViewController {
+final class SearchRepositoryViewController: UIViewController {
   private let searchBar = UISearchBar()
+  private let disposeBag = DisposeBag()
 
   init() {
     super.init(nibName: nil, bundle: Bundle(for: SearchRepositoryViewController.self))
@@ -14,7 +17,19 @@ class SearchRepositoryViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    initalizeView()
+  }
+}
 
+private extension SearchRepositoryViewController {
+  func initalizeView() {
     navigationItem.titleView = searchBar
+    searchBar.rx.text.orEmpty
+      .distinctUntilChanged()
+      .debounce(.milliseconds(100), scheduler: MainScheduler.instance)
+      .subscribe(onNext: { text in
+        log.i(text)
+      })
+      .disposed(by: disposeBag)
   }
 }

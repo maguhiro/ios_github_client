@@ -52,6 +52,17 @@
 		4A06B66B22B6343000BDBA18 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B66A22B6343000BDBA18 /* UIImageView+Extension.swift */; };
 		4A06B67222B64C1600BDBA18 /* SearchRepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B67022B64C1600BDBA18 /* SearchRepositoryViewController.swift */; };
 		4A06B67322B64C1600BDBA18 /* SearchRepositoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A06B67122B64C1600BDBA18 /* SearchRepositoryViewController.xib */; };
+		4A06B67922B6798B00BDBA18 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B67822B6798B00BDBA18 /* Repository.swift */; };
+		4A06B67B22B6799700BDBA18 /* RepositoryID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B67A22B6799700BDBA18 /* RepositoryID.swift */; };
+		4A06B67D22B67ABF00BDBA18 /* RepositoryOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B67C22B67ABF00BDBA18 /* RepositoryOwner.swift */; };
+		4A06B67F22B67B6400BDBA18 /* SearchRepositoryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B67E22B67B6400BDBA18 /* SearchRepositoryResult.swift */; };
+		4A06B68122B67B9100BDBA18 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B68022B67B9000BDBA18 /* Response.swift */; };
+		4A06B68322B67BF300BDBA18 /* SearchRepositoryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B68222B67BF300BDBA18 /* SearchRepositoryAPI.swift */; };
+		4A06B68522B67C5900BDBA18 /* RepositoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B68422B67C5900BDBA18 /* RepositoryRepository.swift */; };
+		4A06B68722B67C9F00BDBA18 /* RepositoryRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B68622B67C9F00BDBA18 /* RepositoryRepositoryImpl.swift */; };
+		4A06B68A22B67E2100BDBA18 /* RepositorySearchUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B68922B67E2100BDBA18 /* RepositorySearchUsecase.swift */; };
+		4A06B68D22B67E6900BDBA18 /* RepositorySearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B68C22B67E6900BDBA18 /* RepositorySearchInteractor.swift */; };
+		4A06B68F22B67F2900BDBA18 /* SearchRepositoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B68E22B67F2900BDBA18 /* SearchRepositoryPresenter.swift */; };
 		4A5BBB1E22A95A6200EA5D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */; };
 		4A5BBB2522A95A6300EA5D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */; };
 		4A5BBB2822A95A6300EA5D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2622A95A6300EA5D93 /* LaunchScreen.storyboard */; };
@@ -313,6 +324,17 @@
 		4A06B66A22B6343000BDBA18 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		4A06B67022B64C1600BDBA18 /* SearchRepositoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryViewController.swift; sourceTree = "<group>"; };
 		4A06B67122B64C1600BDBA18 /* SearchRepositoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchRepositoryViewController.xib; sourceTree = "<group>"; };
+		4A06B67822B6798B00BDBA18 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		4A06B67A22B6799700BDBA18 /* RepositoryID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryID.swift; sourceTree = "<group>"; };
+		4A06B67C22B67ABF00BDBA18 /* RepositoryOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryOwner.swift; sourceTree = "<group>"; };
+		4A06B67E22B67B6400BDBA18 /* SearchRepositoryResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryResult.swift; sourceTree = "<group>"; };
+		4A06B68022B67B9000BDBA18 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		4A06B68222B67BF300BDBA18 /* SearchRepositoryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryAPI.swift; sourceTree = "<group>"; };
+		4A06B68422B67C5900BDBA18 /* RepositoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryRepository.swift; sourceTree = "<group>"; };
+		4A06B68622B67C9F00BDBA18 /* RepositoryRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryRepositoryImpl.swift; sourceTree = "<group>"; };
+		4A06B68922B67E2100BDBA18 /* RepositorySearchUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySearchUsecase.swift; sourceTree = "<group>"; };
+		4A06B68C22B67E6900BDBA18 /* RepositorySearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySearchInteractor.swift; sourceTree = "<group>"; };
+		4A06B68E22B67F2900BDBA18 /* SearchRepositoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryPresenter.swift; sourceTree = "<group>"; };
 		4A5BBB1A22A95A6200EA5D93 /* GithubClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -716,6 +738,7 @@
 			isa = PBXGroup;
 			children = (
 				4A06B58F22AE9D7000BDBA18 /* AccountRepository.swift */,
+				4A06B68422B67C5900BDBA18 /* RepositoryRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -724,6 +747,7 @@
 			isa = PBXGroup;
 			children = (
 				4A06B59122AE9DE200BDBA18 /* Account */,
+				4A06B68822B67DFA00BDBA18 /* Repository */,
 			);
 			path = Usecase;
 			sourceTree = "<group>";
@@ -732,6 +756,7 @@
 			isa = PBXGroup;
 			children = (
 				4A06B59422AE9E4000BDBA18 /* Account */,
+				4A06B68B22B67E5200BDBA18 /* Repository */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -740,6 +765,7 @@
 			isa = PBXGroup;
 			children = (
 				4A06B59722AE9F5A00BDBA18 /* AccountRepositoryImpl.swift */,
+				4A06B68622B67C9F00BDBA18 /* RepositoryRepositoryImpl.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -829,6 +855,7 @@
 			isa = PBXGroup;
 			children = (
 				4A06B5AA22AEAA7200BDBA18 /* Account */,
+				4A06B67422B6785A00BDBA18 /* Repository */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -873,6 +900,7 @@
 				4A06B5B822AEAFAC00BDBA18 /* Const */,
 				E3ED80B822B1113D0054FAC6 /* Core */,
 				E3ED80B122B10A8F0054FAC6 /* Entity */,
+				4A06B67722B6797700BDBA18 /* Response */,
 				E3ED80AE22B10A4F0054FAC6 /* ValueObject */,
 			);
 			path = Classes;
@@ -1019,6 +1047,54 @@
 				4A06B67122B64C1600BDBA18 /* SearchRepositoryViewController.xib */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		4A06B67422B6785A00BDBA18 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				4A06B67522B6786700BDBA18 /* Search */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		4A06B67522B6786700BDBA18 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				4A06B67622B6787000BDBA18 /* Presenter */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		4A06B67622B6787000BDBA18 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4A06B68E22B67F2900BDBA18 /* SearchRepositoryPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4A06B67722B6797700BDBA18 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				4A06B67E22B67B6400BDBA18 /* SearchRepositoryResult.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		4A06B68822B67DFA00BDBA18 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				4A06B68922B67E2100BDBA18 /* RepositorySearchUsecase.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		4A06B68B22B67E5200BDBA18 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				4A06B68C22B67E6900BDBA18 /* RepositorySearchInteractor.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		4A5BBB1122A95A6200EA5D93 = {
@@ -1268,6 +1344,7 @@
 			isa = PBXGroup;
 			children = (
 				E3ED80AB22B1052B0054FAC6 /* AccountAPI.swift */,
+				4A06B68222B67BF300BDBA18 /* SearchRepositoryAPI.swift */,
 			);
 			path = GithubAPI;
 			sourceTree = "<group>";
@@ -1276,6 +1353,7 @@
 			isa = PBXGroup;
 			children = (
 				E3ED80AF22B10A5E0054FAC6 /* UserID.swift */,
+				4A06B67A22B6799700BDBA18 /* RepositoryID.swift */,
 			);
 			path = ValueObject;
 			sourceTree = "<group>";
@@ -1284,6 +1362,8 @@
 			isa = PBXGroup;
 			children = (
 				E3ED80B422B10AD70054FAC6 /* Account.swift */,
+				4A06B67822B6798B00BDBA18 /* Repository.swift */,
+				4A06B67C22B67ABF00BDBA18 /* RepositoryOwner.swift */,
 				E3ED80B222B10A9F0054FAC6 /* User.swift */,
 			);
 			path = Entity;
@@ -1293,6 +1373,7 @@
 			isa = PBXGroup;
 			children = (
 				E3ED80B922B11F510054FAC6 /* Entity.swift */,
+				4A06B68022B67B9000BDBA18 /* Response.swift */,
 				E3ED80B622B110BA0054FAC6 /* ValueObject.swift */,
 			);
 			path = Core;
@@ -2071,12 +2152,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A06B67922B6798B00BDBA18 /* Repository.swift in Sources */,
+				4A06B67D22B67ABF00BDBA18 /* RepositoryOwner.swift in Sources */,
 				4A06B5BA22AEAFB700BDBA18 /* Constants.swift in Sources */,
+				4A06B67B22B6799700BDBA18 /* RepositoryID.swift in Sources */,
 				E3ED80B522B10AD70054FAC6 /* Account.swift in Sources */,
 				E3ED80BA22B11F510054FAC6 /* Entity.swift in Sources */,
 				E3ED80B022B10A5E0054FAC6 /* UserID.swift in Sources */,
 				E3ED80B322B10A9F0054FAC6 /* User.swift in Sources */,
+				4A06B67F22B67B6400BDBA18 /* SearchRepositoryResult.swift in Sources */,
 				E3ED80B722B110BA0054FAC6 /* ValueObject.swift in Sources */,
+				4A06B68122B67B9100BDBA18 /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2095,7 +2181,10 @@
 				4A06B5B122AEAB1F00BDBA18 /* RepositoryResolverHolder.swift in Sources */,
 				4A06B59022AE9D7000BDBA18 /* AccountRepository.swift in Sources */,
 				4A06B64C22B5D0EA00BDBA18 /* AccountInteractor.swift in Sources */,
+				4A06B68522B67C5900BDBA18 /* RepositoryRepository.swift in Sources */,
 				4A06B59F22AEA3BA00BDBA18 /* RepositoryResolver.swift in Sources */,
+				4A06B68D22B67E6900BDBA18 /* RepositorySearchInteractor.swift in Sources */,
+				4A06B68A22B67E2100BDBA18 /* RepositorySearchUsecase.swift in Sources */,
 				4A06B64A22B5D08F00BDBA18 /* AccountUsecase.swift in Sources */,
 				4A06B59322AE9E1E00BDBA18 /* AuthorizationUsecase.swift in Sources */,
 				4A06B59622AE9E5600BDBA18 /* AuthorizationInteractor.swift in Sources */,
@@ -2117,6 +2206,7 @@
 			files = (
 				4A06B5B322AEAD2600BDBA18 /* RepositoryResolver.generated.swift in Sources */,
 				4A06B5AF22AEAAA100BDBA18 /* LoginPresenter.swift in Sources */,
+				4A06B68F22B67F2900BDBA18 /* SearchRepositoryPresenter.swift in Sources */,
 				4A06B64E22B5D3F300BDBA18 /* AccountContainerPresenter.swift in Sources */,
 				4A06B65922B5D8A400BDBA18 /* MyPagePresenter.swift in Sources */,
 				4A06B5BD22AEAFD700BDBA18 /* Constants.swift in Sources */,
@@ -2159,6 +2249,8 @@
 				4A0558B622AD5B08003F2A24 /* KeychainHelper.swift in Sources */,
 				4A06B5BF22AFB42400BDBA18 /* GithubAPIExecutor.swift in Sources */,
 				4A9E14F822AB671D0067C4FB /* GithubAPI.swift in Sources */,
+				4A06B68722B67C9F00BDBA18 /* RepositoryRepositoryImpl.swift in Sources */,
+				4A06B68322B67BF300BDBA18 /* SearchRepositoryAPI.swift in Sources */,
 				4A06B59822AE9F5A00BDBA18 /* AccountRepositoryImpl.swift in Sources */,
 				E3ED80AC22B1052B0054FAC6 /* AccountAPI.swift in Sources */,
 				4A0558B922AD6182003F2A24 /* Constants.swift in Sources */,

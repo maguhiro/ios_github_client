@@ -1,7 +1,7 @@
 import Foundation
 
-public protocol ValueObject: Codable, CustomStringConvertible {
-  associatedtype Value: Codable, CustomStringConvertible
+public protocol ValueObject: Codable, CustomStringConvertible, Equatable {
+  associatedtype Value: Codable, CustomStringConvertible, Equatable
 
   var value: Value { get }
 
@@ -22,5 +22,9 @@ public extension ValueObject {
 
   var description: String {
     return value.description
+  }
+
+  static func == (lhs: Self, rhs: Self) -> Bool {
+    return lhs.value == rhs.value
   }
 }

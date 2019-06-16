@@ -1,6 +1,6 @@
 import Foundation
 
-public struct UserID: ValueObject {
+public struct RepositoryID: ValueObject {
   public let value: Int
 
   public init(value: Int) {

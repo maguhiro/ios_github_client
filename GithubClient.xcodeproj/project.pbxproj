@@ -43,6 +43,8 @@
 		4A06B65422B5D56C00BDBA18 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B65222B5D56C00BDBA18 /* MyPageViewController.swift */; };
 		4A06B65522B5D56C00BDBA18 /* MyPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A06B65322B5D56C00BDBA18 /* MyPageViewController.xib */; };
 		4A06B65922B5D8A400BDBA18 /* MyPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B65822B5D8A400BDBA18 /* MyPagePresenter.swift */; };
+		4A06B65E22B5DB4E00BDBA18 /* IndicatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A06B65C22B5DB4E00BDBA18 /* IndicatorViewController.xib */; };
+		4A06B65F22B5DB4E00BDBA18 /* IndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B65D22B5DB4E00BDBA18 /* IndicatorViewController.swift */; };
 		4A5BBB1E22A95A6200EA5D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */; };
 		4A5BBB2522A95A6300EA5D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */; };
 		4A5BBB2822A95A6300EA5D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2622A95A6300EA5D93 /* LaunchScreen.storyboard */; };
@@ -296,6 +298,8 @@
 		4A06B65222B5D56C00BDBA18 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		4A06B65322B5D56C00BDBA18 /* MyPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageViewController.xib; sourceTree = "<group>"; };
 		4A06B65822B5D8A400BDBA18 /* MyPagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPagePresenter.swift; sourceTree = "<group>"; };
+		4A06B65C22B5DB4E00BDBA18 /* IndicatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndicatorViewController.xib; sourceTree = "<group>"; };
+		4A06B65D22B5DB4E00BDBA18 /* IndicatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorViewController.swift; sourceTree = "<group>"; };
 		4A5BBB1A22A95A6200EA5D93 /* GithubClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -949,6 +953,23 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		4A06B65A22B5DAEE00BDBA18 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4A06B65B22B5DAFA00BDBA18 /* Indicator */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4A06B65B22B5DAFA00BDBA18 /* Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				4A06B65D22B5DB4E00BDBA18 /* IndicatorViewController.swift */,
+				4A06B65C22B5DB4E00BDBA18 /* IndicatorViewController.xib */,
+			);
+			path = Indicator;
+			sourceTree = "<group>";
+		};
 		4A5BBB1122A95A6200EA5D93 = {
 			isa = PBXGroup;
 			children = (
@@ -1110,6 +1131,7 @@
 			children = (
 				4A9E14FD22AB6C290067C4FB /* App */,
 				4A0558AE22AD54A8003F2A24 /* Const */,
+				4A06B65A22B5DAEE00BDBA18 /* Core */,
 				4A9E14FF22AB6C410067C4FB /* ExternalAuth */,
 				4A05589722ACA442003F2A24 /* Generated */,
 			);
@@ -1652,6 +1674,7 @@
 				4A06B64422B5CD8600BDBA18 /* AccountContainerViewController.xib in Resources */,
 				4A0558A322AD4134003F2A24 /* Images.xcassets in Resources */,
 				4A06B65522B5D56C00BDBA18 /* MyPageViewController.xib in Resources */,
+				4A06B65E22B5DB4E00BDBA18 /* IndicatorViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2064,6 +2087,7 @@
 				4A06B64322B5CD8600BDBA18 /* AccountContainerViewController.swift in Sources */,
 				4A0558A722AD48C2003F2A24 /* ImageAssets.swift in Sources */,
 				4A0558AC22AD4AD2003F2A24 /* LoginViewController.swift in Sources */,
+				4A06B65F22B5DB4E00BDBA18 /* IndicatorViewController.swift in Sources */,
 				4A9E150422AB6FF20067C4FB /* GithubOAuth.swift in Sources */,
 				4A0558B022AD54D4003F2A24 /* Constants.swift in Sources */,
 				4A06B65422B5D56C00BDBA18 /* MyPageViewController.swift in Sources */,

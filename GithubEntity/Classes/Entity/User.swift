@@ -2,6 +2,7 @@ import Foundation
 
 public struct User: Entity {
   public let id: UserID
+  public let login: String
   public let name: String
   public let avatarUrl: URL
   public let publicRepos: Int

@@ -12,6 +12,10 @@ public final class AccountRepositoryImpl: AccountRepository {
     return relay
   }
 
+  public func load() -> Account? {
+    return relay.value
+  }
+
   public func signIn(accessToken: String) -> Single<Account> {
     return GithubAPIExecutor.request(api: AccountAPI(accessToken: accessToken))
       .map { Account(accessToken: accessToken, user: $0) }

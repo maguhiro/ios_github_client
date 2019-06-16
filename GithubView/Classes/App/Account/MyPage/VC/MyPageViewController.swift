@@ -1,12 +1,13 @@
 import GithubPresentation
+import Nuke
 import UIKit
 
 class MyPageViewController: UIViewController {
   private let presenter = MyPagePresenter()
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
-  }
+  @IBOutlet private var iconImageView: UIImageView!
+  @IBOutlet private var accountNameLabel: UILabel!
+  @IBOutlet private var nicknameLabel: UILabel!
 
   init() {
     super.init(nibName: nil, bundle: Bundle(for: MyPageViewController.self))
@@ -16,10 +17,33 @@ class MyPageViewController: UIViewController {
   required init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+  }
+
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    presenter.view = self
+    presenter.showPage()
+  }
+
+  override func viewDidDisappear(_ animated: Bool) {
+    super.viewDidDisappear(animated)
+    presenter.view = nil
+  }
 }
 
 private extension MyPageViewController {
   @IBAction func didTapLogoutBtn() {
     presenter.signOut()
+  }
+}
+
+extension MyPageViewController: MyPageView {
+  func render(viewModel: MyPageViewModel) {
+    iconImageView.setImage(url: viewModel.iconURL)
+    accountNameLabel.text = viewModel.accountName
+    nicknameLabel.text = viewModel.nickname
   }
 }

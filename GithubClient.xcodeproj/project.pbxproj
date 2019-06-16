@@ -48,6 +48,8 @@
 		4A06B66222B5DDF800BDBA18 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B66122B5DDF800BDBA18 /* UIAlertController+Extension.swift */; };
 		4A06B66322B5E2CE00BDBA18 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9E14D822AB60770067C4FB /* RxSwift.framework */; };
 		4A06B66522B5E34B00BDBA18 /* RxSwift+Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B66422B5E34B00BDBA18 /* RxSwift+Scheduler.swift */; };
+		4A06B66922B630FE00BDBA18 /* MyPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B66822B630FE00BDBA18 /* MyPageViewModel.swift */; };
+		4A06B66B22B6343000BDBA18 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B66A22B6343000BDBA18 /* UIImageView+Extension.swift */; };
 		4A5BBB1E22A95A6200EA5D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */; };
 		4A5BBB2522A95A6300EA5D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */; };
 		4A5BBB2822A95A6300EA5D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2622A95A6300EA5D93 /* LaunchScreen.storyboard */; };
@@ -305,6 +307,8 @@
 		4A06B65D22B5DB4E00BDBA18 /* IndicatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorViewController.swift; sourceTree = "<group>"; };
 		4A06B66122B5DDF800BDBA18 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
 		4A06B66422B5E34B00BDBA18 /* RxSwift+Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxSwift+Scheduler.swift"; sourceTree = "<group>"; };
+		4A06B66822B630FE00BDBA18 /* MyPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewModel.swift; sourceTree = "<group>"; };
+		4A06B66A22B6343000BDBA18 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		4A5BBB1A22A95A6200EA5D93 /* GithubClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -948,6 +952,7 @@
 			isa = PBXGroup;
 			children = (
 				4A06B65722B5D88D00BDBA18 /* Presenter */,
+				4A06B66722B630E200BDBA18 /* ViewModel */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -981,8 +986,17 @@
 			isa = PBXGroup;
 			children = (
 				4A06B66122B5DDF800BDBA18 /* UIAlertController+Extension.swift */,
+				4A06B66A22B6343000BDBA18 /* UIImageView+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		4A06B66722B630E200BDBA18 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4A06B66822B630FE00BDBA18 /* MyPageViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		4A5BBB1122A95A6200EA5D93 = {
@@ -2083,6 +2097,7 @@
 				4A06B64E22B5D3F300BDBA18 /* AccountContainerPresenter.swift in Sources */,
 				4A06B65922B5D8A400BDBA18 /* MyPagePresenter.swift in Sources */,
 				4A06B5BD22AEAFD700BDBA18 /* Constants.swift in Sources */,
+				4A06B66922B630FE00BDBA18 /* MyPageViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2105,6 +2120,7 @@
 				4A0558AC22AD4AD2003F2A24 /* LoginViewController.swift in Sources */,
 				4A06B65F22B5DB4E00BDBA18 /* IndicatorViewController.swift in Sources */,
 				4A06B66222B5DDF800BDBA18 /* UIAlertController+Extension.swift in Sources */,
+				4A06B66B22B6343000BDBA18 /* UIImageView+Extension.swift in Sources */,
 				4A9E150422AB6FF20067C4FB /* GithubOAuth.swift in Sources */,
 				4A0558B022AD54D4003F2A24 /* Constants.swift in Sources */,
 				4A06B65422B5D56C00BDBA18 /* MyPageViewController.swift in Sources */,

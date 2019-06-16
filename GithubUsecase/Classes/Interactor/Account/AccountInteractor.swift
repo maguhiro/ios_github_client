@@ -20,4 +20,8 @@ public final class AccountInteractor: AccountUsecase, Injectable {
   public func accountRelay() -> BehaviorRelay<Account?> {
     return accountRepository.accountRelay()
   }
+
+  public func load() -> Account? {
+    return accountRepository.load()
+  }
 }

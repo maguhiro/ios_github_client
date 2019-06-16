@@ -1,6 +1,9 @@
+import GithubPresentation
 import UIKit
 
 class MyPageViewController: UIViewController {
+  private let presenter = MyPagePresenter()
+
   override func viewDidLoad() {
     super.viewDidLoad()
   }
@@ -12,5 +15,11 @@ class MyPageViewController: UIViewController {
   @available(*, unavailable)
   required init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
+  }
+}
+
+private extension MyPageViewController {
+  @IBAction func didTapLogoutBtn() {
+    presenter.signOut()
   }
 }

@@ -42,6 +42,7 @@
 		4A06B64E22B5D3F300BDBA18 /* AccountContainerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B64D22B5D3F300BDBA18 /* AccountContainerPresenter.swift */; };
 		4A06B65422B5D56C00BDBA18 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B65222B5D56C00BDBA18 /* MyPageViewController.swift */; };
 		4A06B65522B5D56C00BDBA18 /* MyPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A06B65322B5D56C00BDBA18 /* MyPageViewController.xib */; };
+		4A06B65922B5D8A400BDBA18 /* MyPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B65822B5D8A400BDBA18 /* MyPagePresenter.swift */; };
 		4A5BBB1E22A95A6200EA5D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */; };
 		4A5BBB2522A95A6300EA5D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */; };
 		4A5BBB2822A95A6300EA5D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2622A95A6300EA5D93 /* LaunchScreen.storyboard */; };
@@ -294,6 +295,7 @@
 		4A06B64D22B5D3F300BDBA18 /* AccountContainerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountContainerPresenter.swift; sourceTree = "<group>"; };
 		4A06B65222B5D56C00BDBA18 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		4A06B65322B5D56C00BDBA18 /* MyPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageViewController.xib; sourceTree = "<group>"; };
+		4A06B65822B5D8A400BDBA18 /* MyPagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPagePresenter.swift; sourceTree = "<group>"; };
 		4A5BBB1A22A95A6200EA5D93 /* GithubClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -815,6 +817,7 @@
 		4A06B5AA22AEAA7200BDBA18 /* Account */ = {
 			isa = PBXGroup;
 			children = (
+				4A06B65622B5D87B00BDBA18 /* MyPage */,
 				4A06B64522B5CF6B00BDBA18 /* Container */,
 				4A06B5AB22AEAA7700BDBA18 /* Login */,
 			);
@@ -928,6 +931,22 @@
 				4A06B65322B5D56C00BDBA18 /* MyPageViewController.xib */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		4A06B65622B5D87B00BDBA18 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				4A06B65722B5D88D00BDBA18 /* Presenter */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		4A06B65722B5D88D00BDBA18 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4A06B65822B5D8A400BDBA18 /* MyPagePresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		4A5BBB1122A95A6200EA5D93 = {
@@ -2023,6 +2042,7 @@
 				4A06B5B322AEAD2600BDBA18 /* RepositoryResolver.generated.swift in Sources */,
 				4A06B5AF22AEAAA100BDBA18 /* LoginPresenter.swift in Sources */,
 				4A06B64E22B5D3F300BDBA18 /* AccountContainerPresenter.swift in Sources */,
+				4A06B65922B5D8A400BDBA18 /* MyPagePresenter.swift in Sources */,
 				4A06B5BD22AEAFD700BDBA18 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

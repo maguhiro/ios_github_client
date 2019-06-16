@@ -19,7 +19,7 @@ public final class TopViewController: UITabBarController {
     // FIXME: 正しいVCを設定する
     let searchVC = LoginViewController()
     searchVC.tabBarItem = searchTabItem
-    let accountVC = LoginViewController()
+    let accountVC = AccountContainerViewController()
     accountVC.tabBarItem = accountTabItem
     setViewControllers([searchVC, accountVC], animated: false)
   }

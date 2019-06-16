@@ -35,6 +35,13 @@
 		4A06B5BD22AEAFD700BDBA18 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B5BC22AEAFD700BDBA18 /* Constants.swift */; };
 		4A06B5BF22AFB42400BDBA18 /* GithubAPIExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B5BE22AFB42400BDBA18 /* GithubAPIExecutor.swift */; };
 		4A06B5C222B13D2D00BDBA18 /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B5C122B13D2D00BDBA18 /* Optional+Extension.swift */; };
+		4A06B64322B5CD8600BDBA18 /* AccountContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B64122B5CD8600BDBA18 /* AccountContainerViewController.swift */; };
+		4A06B64422B5CD8600BDBA18 /* AccountContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A06B64222B5CD8600BDBA18 /* AccountContainerViewController.xib */; };
+		4A06B64A22B5D08F00BDBA18 /* AccountUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B64922B5D08F00BDBA18 /* AccountUsecase.swift */; };
+		4A06B64C22B5D0EA00BDBA18 /* AccountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B64B22B5D0EA00BDBA18 /* AccountInteractor.swift */; };
+		4A06B64E22B5D3F300BDBA18 /* AccountContainerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B64D22B5D3F300BDBA18 /* AccountContainerPresenter.swift */; };
+		4A06B65422B5D56C00BDBA18 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B65222B5D56C00BDBA18 /* MyPageViewController.swift */; };
+		4A06B65522B5D56C00BDBA18 /* MyPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A06B65322B5D56C00BDBA18 /* MyPageViewController.xib */; };
 		4A5BBB1E22A95A6200EA5D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */; };
 		4A5BBB2522A95A6300EA5D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */; };
 		4A5BBB2822A95A6300EA5D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2622A95A6300EA5D93 /* LaunchScreen.storyboard */; };
@@ -280,6 +287,13 @@
 		4A06B5BC22AEAFD700BDBA18 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4A06B5BE22AFB42400BDBA18 /* GithubAPIExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPIExecutor.swift; sourceTree = "<group>"; };
 		4A06B5C122B13D2D00BDBA18 /* Optional+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extension.swift"; sourceTree = "<group>"; };
+		4A06B64122B5CD8600BDBA18 /* AccountContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountContainerViewController.swift; sourceTree = "<group>"; };
+		4A06B64222B5CD8600BDBA18 /* AccountContainerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountContainerViewController.xib; sourceTree = "<group>"; };
+		4A06B64922B5D08F00BDBA18 /* AccountUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountUsecase.swift; sourceTree = "<group>"; };
+		4A06B64B22B5D0EA00BDBA18 /* AccountInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInteractor.swift; sourceTree = "<group>"; };
+		4A06B64D22B5D3F300BDBA18 /* AccountContainerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountContainerPresenter.swift; sourceTree = "<group>"; };
+		4A06B65222B5D56C00BDBA18 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		4A06B65322B5D56C00BDBA18 /* MyPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageViewController.xib; sourceTree = "<group>"; };
 		4A5BBB1A22A95A6200EA5D93 /* GithubClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -618,6 +632,8 @@
 		4A0558A422AD42F0003F2A24 /* Account */ = {
 			isa = PBXGroup;
 			children = (
+				4A06B65022B5D55500BDBA18 /* MyPage */,
+				4A06B63F22B5CD3000BDBA18 /* Container */,
 				4A0558A822AD4AA6003F2A24 /* Login */,
 			);
 			path = Account;
@@ -738,6 +754,7 @@
 		4A06B59122AE9DE200BDBA18 /* Account */ = {
 			isa = PBXGroup;
 			children = (
+				4A06B64922B5D08F00BDBA18 /* AccountUsecase.swift */,
 				4A06B59222AE9E1E00BDBA18 /* AuthorizationUsecase.swift */,
 			);
 			path = Account;
@@ -747,6 +764,7 @@
 			isa = PBXGroup;
 			children = (
 				4A06B59522AE9E5600BDBA18 /* AuthorizationInteractor.swift */,
+				4A06B64B22B5D0EA00BDBA18 /* AccountInteractor.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -797,6 +815,7 @@
 		4A06B5AA22AEAA7200BDBA18 /* Account */ = {
 			isa = PBXGroup;
 			children = (
+				4A06B64522B5CF6B00BDBA18 /* Container */,
 				4A06B5AB22AEAA7700BDBA18 /* Login */,
 			);
 			path = Account;
@@ -859,6 +878,56 @@
 				4A06B5C122B13D2D00BDBA18 /* Optional+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		4A06B63F22B5CD3000BDBA18 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				4A06B64022B5CD4400BDBA18 /* VC */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		4A06B64022B5CD4400BDBA18 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				4A06B64122B5CD8600BDBA18 /* AccountContainerViewController.swift */,
+				4A06B64222B5CD8600BDBA18 /* AccountContainerViewController.xib */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		4A06B64522B5CF6B00BDBA18 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				4A06B64622B5CF8100BDBA18 /* Presenter */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		4A06B64622B5CF8100BDBA18 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4A06B64D22B5D3F300BDBA18 /* AccountContainerPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4A06B65022B5D55500BDBA18 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				4A06B65122B5D55C00BDBA18 /* VC */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		4A06B65122B5D55C00BDBA18 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				4A06B65222B5D56C00BDBA18 /* MyPageViewController.swift */,
+				4A06B65322B5D56C00BDBA18 /* MyPageViewController.xib */,
+			);
+			path = VC;
 			sourceTree = "<group>";
 		};
 		4A5BBB1122A95A6200EA5D93 = {
@@ -1561,7 +1630,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A0558AD22AD4AD2003F2A24 /* LoginViewController.xib in Resources */,
+				4A06B64422B5CD8600BDBA18 /* AccountContainerViewController.xib in Resources */,
 				4A0558A322AD4134003F2A24 /* Images.xcassets in Resources */,
+				4A06B65522B5D56C00BDBA18 /* MyPageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1928,7 +1999,9 @@
 			files = (
 				4A06B5B122AEAB1F00BDBA18 /* RepositoryResolverHolder.swift in Sources */,
 				4A06B59022AE9D7000BDBA18 /* AccountRepository.swift in Sources */,
+				4A06B64C22B5D0EA00BDBA18 /* AccountInteractor.swift in Sources */,
 				4A06B59F22AEA3BA00BDBA18 /* RepositoryResolver.swift in Sources */,
+				4A06B64A22B5D08F00BDBA18 /* AccountUsecase.swift in Sources */,
 				4A06B59322AE9E1E00BDBA18 /* AuthorizationUsecase.swift in Sources */,
 				4A06B59622AE9E5600BDBA18 /* AuthorizationInteractor.swift in Sources */,
 				4A06B5B622AEAF8F00BDBA18 /* Constants.swift in Sources */,
@@ -1949,6 +2022,7 @@
 			files = (
 				4A06B5B322AEAD2600BDBA18 /* RepositoryResolver.generated.swift in Sources */,
 				4A06B5AF22AEAAA100BDBA18 /* LoginPresenter.swift in Sources */,
+				4A06B64E22B5D3F300BDBA18 /* AccountContainerPresenter.swift in Sources */,
 				4A06B5BD22AEAFD700BDBA18 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1967,10 +2041,12 @@
 			files = (
 				4A0558A022AD4011003F2A24 /* TopViewController.swift in Sources */,
 				4A05589622ACA196003F2A24 /* GithubOAuthConstants.swift in Sources */,
+				4A06B64322B5CD8600BDBA18 /* AccountContainerViewController.swift in Sources */,
 				4A0558A722AD48C2003F2A24 /* ImageAssets.swift in Sources */,
 				4A0558AC22AD4AD2003F2A24 /* LoginViewController.swift in Sources */,
 				4A9E150422AB6FF20067C4FB /* GithubOAuth.swift in Sources */,
 				4A0558B022AD54D4003F2A24 /* Constants.swift in Sources */,
+				4A06B65422B5D56C00BDBA18 /* MyPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

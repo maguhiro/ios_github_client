@@ -17,10 +17,6 @@ public final class AuthorizationInteractor: AuthorizationUsecase, Injectable {
     self.accountRepository = dependency.accountRepository
   }
 
-  public init(accountRepository: AccountRepository) {
-    self.accountRepository = accountRepository
-  }
-
   public func signIn(accessToken: String) {
     accountRepository
       .signIn(accessToken: accessToken)

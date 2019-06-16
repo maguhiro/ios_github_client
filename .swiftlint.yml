@@ -40,7 +40,7 @@ opt_in_rules:
   - fallthrough
   - fatal_error_message
   #- file_header ヘッダー情報不要
-  - file_name
+  #- file_name
   - file_types_order
   - first_where
   - force_unwrapping
@@ -123,6 +123,7 @@ force_unwrapping:
 identifier_name:
   excluded:
     - id
+    - io
 
 legacy_cggeometry_functions:
   severity: error

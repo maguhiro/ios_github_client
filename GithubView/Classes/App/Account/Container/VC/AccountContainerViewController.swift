@@ -51,8 +51,10 @@ final class AccountContainerViewController: UIViewController {
 extension AccountContainerViewController: AccountContainerView {
   func changeSigninStatus(isLogin: Bool) {
     if isLogin {
+      view.backgroundColor = UIColor.darkGray
       contentViewController = myPageVC
     } else {
+      view.backgroundColor = UIColor.white
       contentViewController = loginVC
     }
   }

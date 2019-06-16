@@ -26,7 +26,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kXs-To-D9c" secondAttribute="bottom" id="1pM-SF-GD5"/>
                 <constraint firstItem="kXs-To-D9c" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="EF8-C8-TUG"/>

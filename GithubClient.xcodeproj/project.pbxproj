@@ -46,6 +46,8 @@
 		4A06B65E22B5DB4E00BDBA18 /* IndicatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A06B65C22B5DB4E00BDBA18 /* IndicatorViewController.xib */; };
 		4A06B65F22B5DB4E00BDBA18 /* IndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B65D22B5DB4E00BDBA18 /* IndicatorViewController.swift */; };
 		4A06B66222B5DDF800BDBA18 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B66122B5DDF800BDBA18 /* UIAlertController+Extension.swift */; };
+		4A06B66322B5E2CE00BDBA18 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9E14D822AB60770067C4FB /* RxSwift.framework */; };
+		4A06B66522B5E34B00BDBA18 /* RxSwift+Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B66422B5E34B00BDBA18 /* RxSwift+Scheduler.swift */; };
 		4A5BBB1E22A95A6200EA5D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */; };
 		4A5BBB2522A95A6300EA5D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */; };
 		4A5BBB2822A95A6300EA5D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2622A95A6300EA5D93 /* LaunchScreen.storyboard */; };
@@ -302,6 +304,7 @@
 		4A06B65C22B5DB4E00BDBA18 /* IndicatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndicatorViewController.xib; sourceTree = "<group>"; };
 		4A06B65D22B5DB4E00BDBA18 /* IndicatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorViewController.swift; sourceTree = "<group>"; };
 		4A06B66122B5DDF800BDBA18 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
+		4A06B66422B5E34B00BDBA18 /* RxSwift+Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxSwift+Scheduler.swift"; sourceTree = "<group>"; };
 		4A5BBB1A22A95A6200EA5D93 /* GithubClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -526,6 +529,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A06B66322B5E2CE00BDBA18 /* RxSwift.framework in Frameworks */,
 				E352CE4D22AA9B16001F4503 /* SwiftyBeaver.framework in Frameworks */,
 				6E16B724E36B7799D60B15B8 /* Pods_GithubUtility.framework in Frameworks */,
 			);
@@ -885,6 +889,7 @@
 			isa = PBXGroup;
 			children = (
 				4A06B5C122B13D2D00BDBA18 /* Optional+Extension.swift */,
+				4A06B66422B5E34B00BDBA18 /* RxSwift+Scheduler.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -2135,6 +2140,7 @@
 				E3ED80C122B120990054FAC6 /* CodableConstants.swift in Sources */,
 				4A06B5C222B13D2D00BDBA18 /* Optional+Extension.swift in Sources */,
 				E352CE5122AA9B38001F4503 /* Logger.swift in Sources */,
+				4A06B66522B5E34B00BDBA18 /* RxSwift+Scheduler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

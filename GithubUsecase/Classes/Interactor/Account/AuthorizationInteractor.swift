@@ -1,5 +1,6 @@
 import DIKit
 import GithubEntity
+import GithubUtility
 import RxSwift
 
 public final class AuthorizationInteractor: AuthorizationUsecase, Injectable {
@@ -21,7 +22,8 @@ public final class AuthorizationInteractor: AuthorizationUsecase, Injectable {
   public func signIn(accessToken: String, completion: @escaping (Result<Account, Error>) -> Void) {
     accountRepository
       .signIn(accessToken: accessToken)
-      .observeOn(MainScheduler.instance)
+      .subscribeOn(type: .io)
+      .observeOn(type: .main)
       .subscribe(onSuccess: { value in
         completion(.success(value))
       },

@@ -1,4 +1,5 @@
 import GithubUsecase
+import GithubUtility
 import RxRelay
 import RxSwift
 
@@ -30,7 +31,7 @@ private extension AccountContainerPresenter {
   func setupBinding() {
     accountUsecase
       .accountRelay()
-      .subscribeOn(MainScheduler.instance)
+      .observeOn(type: .main)
       .subscribe(onNext: { [weak self] account in
         self?.isLogined = account.isLogined
         self?.view?.changeSigninStatus(isLogin: account.isLogined)

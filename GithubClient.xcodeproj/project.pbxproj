@@ -63,6 +63,8 @@
 		4A06B68A22B67E2100BDBA18 /* RepositorySearchUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B68922B67E2100BDBA18 /* RepositorySearchUsecase.swift */; };
 		4A06B68D22B67E6900BDBA18 /* RepositorySearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B68C22B67E6900BDBA18 /* RepositorySearchInteractor.swift */; };
 		4A06B68F22B67F2900BDBA18 /* SearchRepositoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B68E22B67F2900BDBA18 /* SearchRepositoryPresenter.swift */; };
+		4A06B69222B6841200BDBA18 /* SearchRepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B69122B6841200BDBA18 /* SearchRepositoryViewModel.swift */; };
+		4A06B69422B6849000BDBA18 /* RepositoryItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06B69322B6849000BDBA18 /* RepositoryItemViewModel.swift */; };
 		4A5BBB1E22A95A6200EA5D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */; };
 		4A5BBB2522A95A6300EA5D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */; };
 		4A5BBB2822A95A6300EA5D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BBB2622A95A6300EA5D93 /* LaunchScreen.storyboard */; };
@@ -335,6 +337,8 @@
 		4A06B68922B67E2100BDBA18 /* RepositorySearchUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySearchUsecase.swift; sourceTree = "<group>"; };
 		4A06B68C22B67E6900BDBA18 /* RepositorySearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySearchInteractor.swift; sourceTree = "<group>"; };
 		4A06B68E22B67F2900BDBA18 /* SearchRepositoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryPresenter.swift; sourceTree = "<group>"; };
+		4A06B69122B6841200BDBA18 /* SearchRepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryViewModel.swift; sourceTree = "<group>"; };
+		4A06B69322B6849000BDBA18 /* RepositoryItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryItemViewModel.swift; sourceTree = "<group>"; };
 		4A5BBB1A22A95A6200EA5D93 /* GithubClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A5BBB1D22A95A6200EA5D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A5BBB2422A95A6300EA5D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -1061,6 +1065,7 @@
 			isa = PBXGroup;
 			children = (
 				4A06B67622B6787000BDBA18 /* Presenter */,
+				4A06B69022B683F300BDBA18 /* ViewModel */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -1095,6 +1100,15 @@
 				4A06B68C22B67E6900BDBA18 /* RepositorySearchInteractor.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		4A06B69022B683F300BDBA18 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4A06B69322B6849000BDBA18 /* RepositoryItemViewModel.swift */,
+				4A06B69122B6841200BDBA18 /* SearchRepositoryViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		4A5BBB1122A95A6200EA5D93 = {
@@ -2204,8 +2218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A06B69422B6849000BDBA18 /* RepositoryItemViewModel.swift in Sources */,
 				4A06B5B322AEAD2600BDBA18 /* RepositoryResolver.generated.swift in Sources */,
 				4A06B5AF22AEAAA100BDBA18 /* LoginPresenter.swift in Sources */,
+				4A06B69222B6841200BDBA18 /* SearchRepositoryViewModel.swift in Sources */,
 				4A06B68F22B67F2900BDBA18 /* SearchRepositoryPresenter.swift in Sources */,
 				4A06B64E22B5D3F300BDBA18 /* AccountContainerPresenter.swift in Sources */,
 				4A06B65922B5D8A400BDBA18 /* MyPagePresenter.swift in Sources */,

@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchRepositoryViewController" customModule="GithubView" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="KFT-oJ-Yof" id="Smb-qe-pLK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,7 +20,20 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KFT-oJ-Yof">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="KFT-oJ-Yof" secondAttribute="bottom" id="8ev-Qm-hwB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KFT-oJ-Yof" secondAttribute="trailing" id="KNi-cQ-eSd"/>
+                <constraint firstItem="KFT-oJ-Yof" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="dI1-tb-4o6"/>
+                <constraint firstItem="KFT-oJ-Yof" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sDA-wS-2H2"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>

@@ -3,7 +3,7 @@ import GithubUsecase
 import RxSwift
 
 public protocol SearchRepositoryView: AnyObject {
-  func render()
+  func render(viewModel: SearchRepositoryViewModel)
   func showAlert(title: String?, message: String?)
 }
 
@@ -25,7 +25,8 @@ public extension SearchRepositoryPresenter {
     searchUsecase.search(query: query) { [weak self] result in
       switch result {
       case .success(let value):
-        log.i(value)
+        self?.result = value
+        self?.view?.render(viewModel: SearchRepositoryViewModel(result: value))
       case .failure:
         self?.view?.showAlert(title: "検索に失敗しました", message: nil)
       }

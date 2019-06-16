@@ -33,7 +33,7 @@ private extension LoginViewController {
 extension LoginViewController: GithubOAuthDelegate {
   func succeededGithubOAuth(_ oauth: GithubOAuth, accessToken: String) {
     GithubOAuth.shared.delegate = nil
-    presenter.singIn(accessToken: accessToken)
+    presenter.signIn(accessToken: accessToken)
   }
 
   func failedGithubOAuth(_ oauth: GithubOAuth, error: Error) {
@@ -43,7 +43,7 @@ extension LoginViewController: GithubOAuthDelegate {
 
 // MARK: LoginPresenterView
 
-extension LoginViewController: LoginPresenterView {
+extension LoginViewController: LoginView {
   func succeededSignIn() {
     log.i("succeededSignIn")
   }

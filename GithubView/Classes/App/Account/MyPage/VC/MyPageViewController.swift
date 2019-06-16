@@ -8,6 +8,10 @@ class MyPageViewController: UIViewController {
   @IBOutlet private var iconImageView: UIImageView!
   @IBOutlet private var accountNameLabel: UILabel!
   @IBOutlet private var nicknameLabel: UILabel!
+  @IBOutlet private var repositoriesAmountLabel: UILabel!
+  @IBOutlet private var gistsAmountLabel: UILabel!
+  @IBOutlet private var followersAmountLabel: UILabel!
+  @IBOutlet private var followingAmountLabel: UILabel!
 
   init() {
     super.init(nibName: nil, bundle: Bundle(for: MyPageViewController.self))
@@ -45,5 +49,9 @@ extension MyPageViewController: MyPageView {
     iconImageView.setImage(url: viewModel.iconURL)
     accountNameLabel.text = viewModel.accountName
     nicknameLabel.text = viewModel.nickname
+    repositoriesAmountLabel.text = viewModel.repositorisAmountText
+    gistsAmountLabel.text = viewModel.gistsAmountText
+    followersAmountLabel.text = viewModel.followersAmountText
+    followingAmountLabel.text = viewModel.followingAmountText
   }
 }
